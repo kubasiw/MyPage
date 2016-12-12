@@ -2,3 +2,66 @@ body {
     font-family: 'Roboto Mono', 'Arial', 'Helvetica';
     font-size: 2vw;
 }
+
+.absol {position: absolute;}
+.center {margin: 0 auto;}
+
+
+
+.wide-container { 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.section1 {
+    background-color: #B7B7B7;
+}
+
+nav {
+    color: white;
+    ul {
+        li {
+            float: left;
+            display: flex;
+            justify-content: center;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.circle1 {
+    @extend %circle;
+    background-color: dimgrey;
+    .aBox {
+        span {
+            position: absolute;
+            left: 15.7%;
+            top: 1.65vw;
+            padding: 0.3%;
+        }
+    }
+}
+
+.circle2 {
+    @extend %circle;
+    background-color: grey;
+}
+
+.circle3 {
+    @extend %circle;
+    background-color: #A0A0A0;
+}
+
+.aboutBox {
+    span {
+        position: absolute;
+        top: 1.65vw;
+        opacity: 0;
+        color: black;
+    }
+}
