@@ -40,12 +40,24 @@ nav {
     .aBox {
         span {
             position: absolute;
-            left: 15.7%;
+            left: 15.78%;
             top: 1.65vw;
             padding: 0.3%;
         }
     }
 }
+
+.aboutBox {
+    opacity: 0;
+        span {
+            position: absolute;
+            top: 1.95vw;
+            left: 14.85%;
+            color: black;
+        }
+}
+
+
 
 .circle2 {
     @extend %circle;
@@ -57,11 +69,3 @@ nav {
     background-color: #A0A0A0;
 }
 
-.aboutBox {
-    span {
-        position: absolute;
-        top: 1.65vw;
-        opacity: 0;
-        color: black;
-    }
-}

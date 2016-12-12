@@ -2,40 +2,44 @@ jQuery(document).ready(function(){
     
     
     var circle1 = jQuery('.circle1');
-    var circle1b = jQuery('.circle1b');
-    var Aletter = jQuery('.circle1 span');
-    var bout = jQuery('.circle1b span');
+    var aBox = jQuery('.aBox');
+    var aboutBox = jQuery('.aboutBox');
+    var aLetter = jQuery('.aBox span');
+    var about = jQuery('.aboutBox span');
     
     
     function showMenu(){
         
         circle1.on('mouseenter', function(){
-            Aletter.css('left', '13.3'+'%')
-                   .css('transition', '500ms');
-               bout.css('opacity', '1')
-                   .css('transition', '500ms');
-        });
-        
-        circle1b.on('mouseenter', function(){
-            Aletter.css('left', '13.3'+'%')
-                   .css('transition', '500ms');
-               bout.css('opacity', '1')
-                   .css('transition', '500ms');
+           aLetter.css('left', '13.2'+'%')
+                  .css('transition', '500ms');
+          aboutBox.css('opacity', '1')
+                  .css('transition', '500ms');
         });
         
         circle1.on('mouseout', function(){
-            Aletter.css('left', '15.75'+'%')
+            aLetter.css('left', '15.78'+'%')
                    .css('transition', '500ms');
-               bout.css('opacity', '0')
+           aboutBox.css('opacity', '0')
                    .css('transition', '500ms');
         });
         
-        circle1b.on('mouseout', function(){
-            Aletter.css('left', '15.75'+'%')
-                   .css('transition', '500ms');
-               bout.css('opacity', '0')
-                   .css('transition', '500ms');
+        aBox.on('mouseenter', function(){
+           aLetter.css('left', '13.2'+'%')
+                  .css('transition', '500ms');
+          aboutBox.css('opacity', '1')
+                  .css('transition', '500ms');
         });
+        
+        aboutBox.on('mouseenter', function(){
+           aLetter.css('left', '13.2'+'%')
+                  .css('transition', '500ms');
+          aboutBox.css('opacity', '1')
+                  .css('transition', '500ms');
+        });
+        
+        
+        
         
     };
     showMenu();
