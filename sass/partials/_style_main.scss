@@ -58,14 +58,50 @@ nav {
 }
 
 
-
 .circle2 {
     @extend %circle;
-    background-color: grey;
+    background-color: dimgrey;
+    .bBox {
+        span {
+            position: absolute;
+            left: 49.17%;
+            top: 1.65vw;
+            padding: 0.3%;
+        }
+    }
+}
+
+.beBox {
+    opacity: 0;
+        span {
+            position: absolute;
+            top: 1.95vw;
+            left: 48.25%;
+            color: black;
+        }
 }
 
 .circle3 {
     @extend %circle;
-    background-color: #A0A0A0;
+    background-color: dimgrey;
+    .cBox {
+        span {
+            position: absolute;
+            left: 82.47%;
+            top: 1.65vw;
+            padding: 0.3%;
+        }
+    }
 }
+
+.ceBox {
+    opacity: 0;
+        span {
+            position: absolute;
+            top: 1.95vw;
+            left: 81.56%;
+            color: black;
+        }
+}
+
 
