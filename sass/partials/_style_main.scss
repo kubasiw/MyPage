@@ -16,7 +16,7 @@ body {
 
 
 .section1 {
-    background-color: #B7B7B7;
+    background-color: 0;
 }
 
 nav {
@@ -36,7 +36,7 @@ nav {
 
 .circle1 {
     @extend %circle;
-    background-color: dimgrey;
+    background-color: #515151;
     .aBox {
         span {
             position: absolute;
@@ -44,10 +44,14 @@ nav {
             top: 1.65vw;
             padding: 0.3%;
         }
+        p {
+            display: inline-block;
+        }
     }
 }
 
 .aboutBox {
+    display: none;
     opacity: 0;
         span {
             position: absolute;
@@ -60,7 +64,7 @@ nav {
 
 .circle2 {
     @extend %circle;
-    background-color: dimgrey;
+    background-color: #6D6D6D;
     .bBox {
         span {
             position: absolute;
@@ -72,6 +76,7 @@ nav {
 }
 
 .beBox {
+    display: none;
     opacity: 0;
         span {
             position: absolute;
@@ -83,7 +88,7 @@ nav {
 
 .circle3 {
     @extend %circle;
-    background-color: dimgrey;
+    background-color: #8C8C8C;
     .cBox {
         span {
             position: absolute;
@@ -95,6 +100,7 @@ nav {
 }
 
 .ceBox {
+    display: none;
     opacity: 0;
         span {
             position: absolute;
