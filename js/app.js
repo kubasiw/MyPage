@@ -33,7 +33,7 @@ jQuery(document).ready(function(){
             aboutBox.css('display', 'inline-block')
                     .css('opacity', '1')
                     .css('transition', '500ms');
-            jQuery(this).css('background-color', '#5C67DA')
+            jQuery(this).css('background-color', '#18D8D8')
                         .css('transition', '500ms');
         });
         
@@ -42,7 +42,7 @@ jQuery(document).ready(function(){
                    .css('color', 'white')
                    .css('transition', '500ms');
             aboutBox.css('display', 'none');
-            circle1.css('background-color', '#515151')
+            circle1.css('background-color', '#E72727')
                    .css('transition', '500ms');
         });
         
@@ -53,7 +53,7 @@ jQuery(document).ready(function(){
             aboutBox.css('display', 'inline-block')
                     .css('opacity', '1')
                     .css('transition', '500ms');
-            circle1.css('background-color', '#5C67DA')
+            circle1.css('background-color', '#18D8D8')
                    .css('transition', '500ms');
         });
         
@@ -63,7 +63,7 @@ jQuery(document).ready(function(){
             aboutBox.css('display', 'inline-block')
                     .css('opacity', '1')
                     .css('transition', '500ms');
-            circle1.css('background-color', '#5C67DA')
+            circle1.css('background-color', '#18D8D8')
                    .css('transition', '500ms');
         });
         
@@ -78,7 +78,7 @@ jQuery(document).ready(function(){
             beBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            jQuery(this).css('background-color', '#975CDA')
+            jQuery(this).css('background-color', '#1818D8')
                         .css('transition', '500ms');
         });
         
@@ -87,7 +87,7 @@ jQuery(document).ready(function(){
                    .css('color', 'white')
                    .css('transition', '500ms');
             beBox.css('display', 'none');
-            circle2.css('background-color', '#6D6D6D')
+            circle2.css('background-color', '#E7E727')
                    .css('transition', '500ms');
         });
         
@@ -98,7 +98,7 @@ jQuery(document).ready(function(){
             beBox.css('display', 'inline-block')
                     .css('opacity', '1')
                     .css('transition', '500ms');
-            circle2.css('background-color', '#975CDA')
+            circle2.css('background-color', '#1818D8')
                    .css('transition', '500ms');
         });
         
@@ -108,7 +108,7 @@ jQuery(document).ready(function(){
             beBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            circle2.css('background-color', '#975CDA')
+            circle2.css('background-color', '#1818D8')
                    .css('transition', '500ms');
         });
         
@@ -123,7 +123,7 @@ jQuery(document).ready(function(){
             ceBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            jQuery(this).css('background-color', '#5CDA9B')
+            jQuery(this).css('background-color', '#9245DF')
                         .css('transition', '500ms');
         });
         
@@ -132,7 +132,7 @@ jQuery(document).ready(function(){
                    .css('color', 'white')
                    .css('transition', '500ms');
             ceBox.css('display', 'none');
-            circle3.css('background-color', '#8C8C8C')
+            circle3.css('background-color', '#6DBA20')
                    .css('transition', '500ms');
         });
         
@@ -143,7 +143,7 @@ jQuery(document).ready(function(){
             ceBox.css('display', 'inline-block')
                     .css('opacity', '1')
                     .css('transition', '500ms');
-            circle3.css('background-color', '#5CDA9B')
+            circle3.css('background-color', '#9245DF')
                    .css('transition', '500ms');
         });
         
@@ -153,7 +153,7 @@ jQuery(document).ready(function(){
             ceBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            circle3.css('background-color', '#5CDA9B')
+            circle3.css('background-color', '#9245DF')
                    .css('transition', '500ms');
         });
         

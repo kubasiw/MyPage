@@ -18,7 +18,10 @@ body {
 
 .section1 {
     width: 100%;
-    background-color: silver;
+    position: relative;
+    background-image: url(/images/alpes_bw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -38,6 +41,11 @@ header {
     overflow: hidden;
 }
 
+//.navRow {
+//    height: 5vw;
+//    background-color: rgba(135, 135, 135, 0.5);
+//}
+
 nav {
     color: white;
     ul {
@@ -55,7 +63,7 @@ nav {
 
 .circle1 {
     @extend %circle;
-    background-color: #515151;
+    background-color: #E72727;
     .aBox {
         span {
             position: absolute;
@@ -83,7 +91,7 @@ nav {
 
 .circle2 {
     @extend %circle;
-    background-color: #6D6D6D;
+    background-color: #E7E727;
     .bBox {
         span {
             position: absolute;
@@ -107,7 +115,7 @@ nav {
 
 .circle3 {
     @extend %circle;
-    background-color: #8C8C8C;
+    background-color: #6DBA20;
     .cBox {
         span {
             position: absolute;
@@ -127,6 +135,14 @@ nav {
             left: 81.56%;
             color: black;
         }
+}
+
+.myName {
+    position: absolute;
+    font-size: 10vw;
+    color: whitesmoke;
+    top: 26vw;
+    left: 4vw;
 }
 
 
