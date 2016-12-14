@@ -157,9 +157,6 @@ jQuery(document).ready(function(){
                    .css('transition', '500ms');
         });
         
-        
-        
-        
     };
     showMenu();
     
