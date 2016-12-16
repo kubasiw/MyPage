@@ -20,28 +20,26 @@ body {
 .section1 {
     width: 100%;
     position: relative;
-    background-image: url(/images/alpes_bw.jpg);
+    background-image: url(/images/stopeff3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
+.section {
+    @extend %section;
+}
+
 .section2 {
-    width: 100%;
-    height: 100vh;
-    background-color: aqua;
+    @extend %section;
 }
 
 .section3 {
-    width: 100%;
-    height: 100vh;
-    background-color: skyblue;
+    @extend %section;
 }
 
 .section4 {
-    width: 100%;
-    height: 100vh;
-    background-color: lightslategrey;
+    @extend %section;
 }
 
 header {
@@ -66,14 +64,14 @@ nav {
 }
 
 .circleBox {
-    width: 33.3333%;
+    width: 25%;
     display: flex;
     justify-content: center;
 }
 
 .circle1 {
     @extend %circle;
-    background-color: #E72727;
+    background-color: #ff4000;
     .aBox {
         span {
             position: absolute;
@@ -91,14 +89,14 @@ nav {
             position: absolute;
             top: 28%;
             left: 3%;
-            color: black;
+            color: #ff4000;
         }
 }
 
 
 .circle2 {
     @extend %circle;
-    background-color: #E7E727;
+    background-color: #ff4000;
     .bBox {
         span {
             position: absolute;
@@ -116,13 +114,13 @@ nav {
             position: absolute;
             top: 28%;
             left: 3%;
-            color: black;
+            color: #ff4000;
         }
 }
 
 .circle3 {
     @extend %circle;
-    background-color: #6DBA20;
+    background-color: #ff4000;
     .cBox {
         span {
             position: absolute;
@@ -140,15 +138,26 @@ nav {
             position: absolute;
             top: 28%;
             left: 3%;
-            color: black;
+            color: #ff4000;
         }
 }
 
+.circle4 {
+    @extend %circle;
+    background-color: #ffffff;
+    background-image: url(/images/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 .myName {
+    position: relative;
     font-size: 10vw;
-    color: whitesmoke;
-    top: 26vw;
-    left: 4vw;
+    color: #ff4000;
+    top: 10%;
+    left: 10%;
 }
 
 

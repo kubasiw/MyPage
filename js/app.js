@@ -22,16 +22,20 @@ jQuery(document).ready(function(){
     var cLetter = jQuery('.cBox span');
     var contact = jQuery('.ceBox span');
     
+    // home vars
+    
+    var circle4 = jQuery('.circle4');
+    
     function showMenu(){
         
         // jQuery for A
         
         circle1.on('mouseover', function(){
             aLetter.css('left', '-22.22'+'%')
-                   .css('color', 'black')
+                   .css('color', '#ff4000')
                    .css('transition', '500ms');
             aboutBox.css('display', 'block');
-            jQuery(this).css('background-color', '#18D8D8')
+            jQuery(this).css('background-color', 'white')
                         .css('transition', '500ms');
         });
         
@@ -40,7 +44,7 @@ jQuery(document).ready(function(){
                    .css('color', 'white')
                    .css('transition', '500ms');
             aboutBox.css('display', 'none');
-            circle1.css('background-color', '#E72727')
+            circle1.css('background-color', '#ff4000')
                    .css('transition', '500ms');
         });
         
@@ -71,12 +75,12 @@ jQuery(document).ready(function(){
         
         circle2.on('mouseover', function(){
             bLetter.css('left', '-22.22'+'%')
-                   .css('color', 'black')
+                   .css('color', '#ff4000')
                    .css('transition', '500ms');
             beBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            jQuery(this).css('background-color', '#1818D8')
+            jQuery(this).css('background-color', 'white')
                         .css('transition', '500ms');
         });
         
@@ -85,7 +89,7 @@ jQuery(document).ready(function(){
                    .css('color', 'white')
                    .css('transition', '500ms');
             beBox.css('display', 'none');
-            circle2.css('background-color', '#E7E727')
+            circle2.css('background-color', '#ff4000')
                    .css('transition', '500ms');
         });
         
@@ -116,12 +120,12 @@ jQuery(document).ready(function(){
         
         circle3.on('mouseover', function(){
             cLetter.css('left', '-22.22'+'%')
-                   .css('color', 'black')
+                   .css('color', '#ff4000')
                    .css('transition', '500ms');
             ceBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            jQuery(this).css('background-color', '#9245DF')
+            jQuery(this).css('background-color', 'white')
                         .css('transition', '500ms');
         });
         
@@ -130,7 +134,7 @@ jQuery(document).ready(function(){
                    .css('color', 'white')
                    .css('transition', '500ms');
             ceBox.css('display', 'none');
-            circle3.css('background-color', '#6DBA20')
+            circle3.css('background-color', '#ff4000')
                    .css('transition', '500ms');
         });
         
@@ -155,6 +159,18 @@ jQuery(document).ready(function(){
                    .css('transition', '500ms');
         });
         
+        // jQuery for home
+        
+        circle4.on('mouseover', function(){
+           jQuery(this).css('background-color', '#ff4000')
+                       .css('transition', '500ms');
+        });
+        
+        circle4.on('mouseout', function(){
+           jQuery(this).css('background-color', '#ffffff')
+                       .css('transition', '500ms');
+        });
+        
     };
     showMenu();
     
@@ -166,21 +182,21 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},4000);
         });
         
         circle2.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},4000);
         });
         
         circle3.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},4000);
         });
         
         anchor.on('click', function(){
@@ -188,22 +204,36 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},4000);
             
         });
     };
     lookForSection();
     
     
-//    anchor.on('click', function(){  // po kliknięciu w anczor ...
-//        var id = jQuery(this).attr('href'); // do id pobieramy jego href
-//        var elemOffset = jQuery(id).offset(); // wyszukujemy dzieki stringowi id offset tagu z takimsamym id
-//        //console.log(elemOffset);
-//        jQuery('html, body').animate({scrollTop: elemOffset.top},3000);
-//    });
+    function pageStart() {
+        
+        var myName = jQuery('.myName');
+    
+        myName.animate({'top':'50%', 'font-size':'6'+'vw'},1500)
+              .css('color', '#ffffff')
+              .css('transition', '2550ms')
+              .animate({  borderSpacing: -10.5 }, {
+                    step: function(now,fx) {
+                      jQuery(this).css('-webkit-transform','rotate('+now+'deg)'); 
+                      jQuery(this).css('-moz-transform','rotate('+now+'deg)');
+                      jQuery(this).css('transform','rotate('+now+'deg)');
+                    },
+                    duration:'slow'
+                },'linear');
+
+    };
+    setTimeout(pageStart, 500);
+    
     
     
 
+    
 
     
     
