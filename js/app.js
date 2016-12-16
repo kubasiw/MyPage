@@ -27,7 +27,7 @@ jQuery(document).ready(function(){
         // jQuery for A
         
         circle1.on('mouseover', function(){
-            aLetter.css('left', '13.2'+'%')
+            aLetter.css('left', '-22.22'+'%')
                    .css('color', 'black')
                    .css('transition', '500ms');
             aboutBox.css('display', 'inline-block')
@@ -38,7 +38,7 @@ jQuery(document).ready(function(){
         });
         
         circle1.on('mouseout', function(){
-            aLetter.css('left', '15.78'+'%')
+            aLetter.css('left', '39'+'%')
                    .css('color', 'white')
                    .css('transition', '500ms');
             aboutBox.css('display', 'none');
@@ -72,7 +72,7 @@ jQuery(document).ready(function(){
         
         
         circle2.on('mouseover', function(){
-            bLetter.css('left', '46.55'+'%')
+            bLetter.css('left', '-22.22'+'%')
                    .css('color', 'black')
                    .css('transition', '500ms');
             beBox.css('display', 'inline-block')
@@ -83,7 +83,7 @@ jQuery(document).ready(function(){
         });
         
         circle2.on('mouseout', function(){
-            bLetter.css('left', '49.17'+'%')
+            bLetter.css('left', '39'+'%')
                    .css('color', 'white')
                    .css('transition', '500ms');
             beBox.css('display', 'none');
@@ -117,7 +117,7 @@ jQuery(document).ready(function(){
         
         
         circle3.on('mouseover', function(){
-            cLetter.css('left', '79.85'+'%')
+            cLetter.css('left', '-22.22'+'%')
                    .css('color', 'black')
                    .css('transition', '500ms');
             ceBox.css('display', 'inline-block')
@@ -128,7 +128,7 @@ jQuery(document).ready(function(){
         });
         
         circle3.on('mouseout', function(){
-            cLetter.css('left', '82.47'+'%')
+            cLetter.css('left', '39'+'%')
                    .css('color', 'white')
                    .css('transition', '500ms');
             ceBox.css('display', 'none');
@@ -160,6 +160,16 @@ jQuery(document).ready(function(){
     };
     showMenu();
     
+//    var body = jQuery('body');
+//    
+//    function scrolling(){
+//        
+//        body.on('onmousewheel' function(){
+//            
+//        });
+//        
+//    };
+//    scrolling();
     
 
 

@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto Mono', 'Arial', 'Helvetica';
     font-size: 2vw;
+    overflow-y: hidden;
 }
 
 .absol {position: absolute;}
@@ -41,24 +42,27 @@ header {
     overflow: hidden;
 }
 
-//.navRow {
-//    height: 5vw;
-//    background-color: rgba(135, 135, 135, 0.5);
-//}
-
 nav {
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
     color: white;
-    ul {
-        li {
-            float: left;
-            display: flex;
-            justify-content: center;
-            a {
-                text-decoration: none;
-                color: white;
-            }
+    font-size: 2vw;
+        a {
+            text-decoration: none;
+            color: white;
         }
-    }
+}
+
+.allCircleBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circleBox {
+    width: 33.3333%;
+    display: flex;
+    justify-content: center;
 }
 
 .circle1 {
@@ -67,23 +71,21 @@ nav {
     .aBox {
         span {
             position: absolute;
-            left: 15.78%;
-            top: 1.65vw;
-            padding: 0.3%;
+            left: 39%;
+            top: 28%;
+            padding: 0;
         }
-        p {
-            display: inline-block;
-        }
+        
     }
 }
 
 .aboutBox {
     display: none;
-    opacity: 0;
+    opacity: 1;
         span {
             position: absolute;
-            top: 1.95vw;
-            left: 14.85%;
+            top: 28%;
+            left: 3%;
             color: black;
         }
 }
@@ -95,20 +97,20 @@ nav {
     .bBox {
         span {
             position: absolute;
-            left: 49.17%;
-            top: 1.65vw;
-            padding: 0.3%;
+            left: 39%;
+            top: 28%;
+            padding: 0;
         }
     }
 }
 
 .beBox {
     display: none;
-    opacity: 0;
+    opacity: 1;
         span {
             position: absolute;
-            top: 1.95vw;
-            left: 48.25%;
+            top: 28%;
+            left: 3%;
             color: black;
         }
 }
@@ -119,26 +121,25 @@ nav {
     .cBox {
         span {
             position: absolute;
-            left: 82.47%;
-            top: 1.65vw;
-            padding: 0.3%;
+            left: 39%;
+            top: 28%;
+            padding: 0;
         }
     }
 }
 
 .ceBox {
     display: none;
-    opacity: 0;
+    opacity: 1;
         span {
             position: absolute;
-            top: 1.95vw;
-            left: 81.56%;
+            top: 28%;
+            left: 3%;
             color: black;
         }
 }
 
 .myName {
-    position: absolute;
     font-size: 10vw;
     color: whitesmoke;
     top: 26vw;
