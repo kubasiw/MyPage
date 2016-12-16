@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto Mono', 'Arial', 'Helvetica';
     font-size: 2vw;
-    overflow-y: hidden;
+    overflow-y: 0;
 }
 
 .absol {position: absolute;}
@@ -36,6 +36,12 @@ body {
     width: 100%;
     height: 100vh;
     background-color: skyblue;
+}
+
+.section4 {
+    width: 100%;
+    height: 100vh;
+    background-color: lightslategrey;
 }
 
 header {
@@ -81,7 +87,6 @@ nav {
 
 .aboutBox {
     display: none;
-    opacity: 1;
         span {
             position: absolute;
             top: 28%;

@@ -30,9 +30,7 @@ jQuery(document).ready(function(){
             aLetter.css('left', '-22.22'+'%')
                    .css('color', 'black')
                    .css('transition', '500ms');
-            aboutBox.css('display', 'inline-block')
-                    .css('opacity', '1')
-                    .css('transition', '500ms');
+            aboutBox.css('display', 'block');
             jQuery(this).css('background-color', '#18D8D8')
                         .css('transition', '500ms');
         });
@@ -160,16 +158,50 @@ jQuery(document).ready(function(){
     };
     showMenu();
     
-//    var body = jQuery('body');
-//    
-//    function scrolling(){
-//        
-//        body.on('onmousewheel' function(){
-//            
-//        });
-//        
-//    };
-//    scrolling();
+    function lookForSection(){
+        
+        var anchor = jQuery("nav a");
+        
+        circle1.on('click', function(){
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+        });
+        
+        circle2.on('click', function(){
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+        });
+        
+        circle3.on('click', function(){
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+        });
+        
+        anchor.on('click', function(){
+            
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            
+        });
+    };
+    lookForSection();
+    
+    
+//    anchor.on('click', function(){  // po kliknięciu w anczor ...
+//        var id = jQuery(this).attr('href'); // do id pobieramy jego href
+//        var elemOffset = jQuery(id).offset(); // wyszukujemy dzieki stringowi id offset tagu z takimsamym id
+//        //console.log(elemOffset);
+//        jQuery('html, body').animate({scrollTop: elemOffset.top},3000);
+//    });
+    
     
 
 
