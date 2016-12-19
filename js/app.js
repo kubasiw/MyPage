@@ -29,6 +29,16 @@ jQuery(document).ready(function(){
     var circleUp = jQuery('.circleArrowUp');
     var circleDown = jQuery('.circleArrowDown');
     
+    var upAbout = jQuery('.upAbout');
+    var downAbout = jQuery('.downAbout');
+    
+    var upPort = jQuery('.upPort');
+    var downPort = jQuery('.downPort');
+    
+    var upCont = jQuery('.upCont');
+    
+    
+    
     function showMenu(){
         
         // jQuery for A
@@ -198,6 +208,10 @@ jQuery(document).ready(function(){
         
         
         
+        
+        
+        
+        
     };
     showMenu();
     
@@ -240,6 +254,42 @@ jQuery(document).ready(function(){
             
             jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
         });
+        
+        upAbout.on('click', function(){
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+        });
+        
+        downAbout.on('click', function(){
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+        });
+        
+        upPort.on('click', function(){
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+        });
+        
+        downPort.on('click', function(){
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+        });
+        
+        upCont.on('click', function(){
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+        });
+        
     };
     lookForSection();
     
