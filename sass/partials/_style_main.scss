@@ -160,4 +160,32 @@ nav {
     left: 10%;
 }
 
+.circleBoxAbout {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutTextBox {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleArrowUp {
+    @extend %circle;
+    background-color: white;
+}
+
+.circleArrowDown {
+    @extend %circle;
+    background-color: white;
+    top: 0;
+}
+
 

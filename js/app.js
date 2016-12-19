@@ -182,21 +182,21 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},4000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
         });
         
         circle2.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},4000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
         });
         
         circle3.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},4000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1500);
         });
         
         anchor.on('click', function(){
@@ -204,8 +204,14 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},4000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},2000);
+        });
+        
+        circle4.on('click', function(){
+            var id = jQuery(this).attr('href');
+            var elemOffset = jQuery(id).offset();
             
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
         });
     };
     lookForSection();
@@ -215,7 +221,7 @@ jQuery(document).ready(function(){
         
         var myName = jQuery('.myName');
     
-        myName.animate({'top':'50%', 'font-size':'6'+'vw'},1500)
+        myName.animate({'top':'50%', 'font-size':'6'+'vw'},1100)
               .css('color', '#ffffff')
               .css('transition', '2550ms')
               .animate({  borderSpacing: -10.5 }, {
