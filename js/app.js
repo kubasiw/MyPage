@@ -26,6 +26,9 @@ jQuery(document).ready(function(){
     
     var circle4 = jQuery('.circle4');
     
+    var circleUp = jQuery('.circleArrowUp');
+    var circleDown = jQuery('.circleArrowDown');
+    
     function showMenu(){
         
         // jQuery for A
@@ -170,6 +173,30 @@ jQuery(document).ready(function(){
            jQuery(this).css('background-color', '#ffffff')
                        .css('transition', '500ms');
         });
+        
+        // jQuery for arrows
+        
+        circleUp.on('mouseover', function(){
+            jQuery(this).css('background-color', '#ff4000')
+                        .css('transition', '500ms');
+        });
+        
+        circleUp.on('mouseout', function(){
+           jQuery(this).css('background-color', '#ffffff')
+                       .css('transition', '500ms');
+        });
+        
+        circleDown.on('mouseover', function(){
+            jQuery(this).css('background-color', '#ff4000')
+                        .css('transition', '500ms');
+        });
+        
+        circleDown.on('mouseout', function(){
+           jQuery(this).css('background-color', '#ffffff')
+                       .css('transition', '500ms');
+        });
+        
+        
         
     };
     showMenu();

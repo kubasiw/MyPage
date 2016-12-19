@@ -175,11 +175,26 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 5rem;
 }
 
 .circleArrowUp {
     @extend %circle;
     background-color: white;
+    background-image: url(/images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 35%;
+}
+
+.circleArrowDown {
+    @extend %circle;
+    background-color: white;
+    background-image: url(/images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 35%;
+    transform: rotate(180deg);
 }
 
 .circleArrowDown {
