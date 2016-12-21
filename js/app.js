@@ -39,7 +39,9 @@ jQuery(document).ready(function(){
     
     var inAm = jQuery('.inAmSec');
     
-    
+//    $(window).ready(function() {
+//        $('#fullpage').fullpage();
+//    });
     
     function showMenu(){
         
@@ -318,6 +320,15 @@ jQuery(document).ready(function(){
                 circleBoxPort.animate({'opacity':'1'},300);
             });
         });
+        
+//        jQuery(window).bind('mousewheel', function(event) {
+//            if (event.originalEvent.wheelDelta >= 0) {
+//                console.log('Scroll up');
+//            }
+//            else {
+//                console.log('Scroll down');
+//            }
+//        });
         
     };
     lookForSection();
