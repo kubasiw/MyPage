@@ -264,41 +264,59 @@ jQuery(document).ready(function(){
                 circleBoxPort.animate({'opacity':'0'},300);
                 circleBoxCont.animate({'opacity':'0'},300);
             });
+            
+    
         });
+        
+        
         
         upAbout.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
+                circleBoxAbout.animate({'opacity':'0'},300);
+            });
         });
         
         downAbout.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
+                circleBoxAbout.animate({'opacity':'0'},300);
+                circleBoxPort.animate({'opacity':'1'},300);
+            });
         });
         
         upPort.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
+                circleBoxPort.animate({'opacity':'0'},300);
+                circleBoxAbout.animate({'opacity':'1'},300);
+            });
         });
         
         downPort.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
+                circleBoxPort.animate({'opacity':'0'},300);
+                circleBoxCont.animate({'opacity':'1'},300);
+            });
         });
         
         upCont.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
+                circleBoxCont.animate({'opacity':'0'},300);
+                circleBoxPort.animate({'opacity':'1'},300);
+            });
         });
         
     };
