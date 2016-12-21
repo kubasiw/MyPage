@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto Mono', 'Arial', 'Helvetica';
     font-size: 2vw;
-    overflow-y: hidden;
+    overflow-y: 0;
 }
 
 .absol {position: absolute;}
@@ -32,10 +32,12 @@ body {
 
 .section2 {
     @extend %section;
+    
 }
 
 .section3 {
     @extend %section;
+    
 }
 
 .section4 {
@@ -167,6 +169,27 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    opacity: 0;
+}
+
+.circleBoxPort {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+}
+
+.circleBoxCont {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
 }
 
 .aboutTextBox {

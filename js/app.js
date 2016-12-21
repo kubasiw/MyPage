@@ -37,6 +37,8 @@ jQuery(document).ready(function(){
     
     var upCont = jQuery('.upCont');
     
+    var inAm = jQuery('.inAmSec');
+    
     
     
     function showMenu(){
@@ -206,38 +208,43 @@ jQuery(document).ready(function(){
                        .css('transition', '500ms');
         });
         
-        
-        
-        
-        
-        
-        
     };
     showMenu();
+    
     
     function lookForSection(){
         
         var anchor = jQuery("nav a");
+        var circleBoxAbout = jQuery('.circleBoxAbout');
+        var circleBoxPort = jQuery('.circleBoxPort');
+        var circleBoxCont = jQuery('.circleBoxCont');
         
         circle1.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
+                circleBoxAbout.animate({'opacity':'1'},300);
+            });
+
         });
         
         circle2.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
+                circleBoxPort.animate({'opacity':'1'},300);
+            });
         });
         
         circle3.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1500);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1500, function() {
+                circleBoxCont.animate({'opacity':'1'},300);
+            });
         });
         
         anchor.on('click', function(){
@@ -252,7 +259,11 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
+                circleBoxAbout.animate({'opacity':'0'},300);
+                circleBoxPort.animate({'opacity':'0'},300);
+                circleBoxCont.animate({'opacity':'0'},300);
+            });
         });
         
         upAbout.on('click', function(){
