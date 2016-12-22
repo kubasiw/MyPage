@@ -46,6 +46,35 @@ jQuery(document).ready(function(){
 //    });
     
     
+    var nav = jQuery('nav');
+    var ul = jQuery('.menu').find('ul');
+    
+    function stickyMenu(){
+        var position = nav.offset().top;
+        jQuery(window).on('scroll', function(){
+
+             var scrollTop = jQuery(window).scrollTop();
+             var allCircleBox = jQuery('.allCircleBox');
+
+             if (scrollTop > position) {
+                nav.addClass('sticky')
+                allCircleBox.addClass('stickyBox')
+            } else {
+                nav.removeClass('sticky')
+                allCircleBox.removeClass('stickyBox')
+            }
+        });
+    };
+    stickyMenu();
+    
+    jQuery(window).on('resize', function(){
+
+        jQuery(window).off('scroll');
+        stickyMenu();
+        
+    });
+    
+    
     function showMenu(){
         
         // jQuery for A
@@ -230,6 +259,8 @@ jQuery(document).ready(function(){
             
             jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
                 circleBoxAbout.animate({'opacity':'1'},300);
+                circleBoxPort.animate({'opacity':'0'},300);
+                circleBoxCont.animate({'opacity':'0'},300);
             });
 
         });
@@ -240,6 +271,8 @@ jQuery(document).ready(function(){
             
             jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
                 circleBoxPort.animate({'opacity':'1'},300);
+                circleBoxAbout.animate({'opacity':'0'},300);
+                circleBoxCont.animate({'opacity':'0'},300);
             });
         });
         
@@ -249,6 +282,8 @@ jQuery(document).ready(function(){
             
             jQuery('html, body').animate({scrollTop: elemOffset.top},1500, function() {
                 circleBoxCont.animate({'opacity':'1'},300);
+                circleBoxPort.animate({'opacity':'0'},300);
+                circleBoxAbout.animate({'opacity':'0'},300);
             });
         });
         

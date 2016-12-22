@@ -64,6 +64,18 @@ nav {
         }
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.stickyBox {
+    width: 100vw;
+    margin-top: 1.5vw;
+}
 
 .allCircleBox {
     position: relative;
@@ -177,7 +189,7 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     opacity: 0;
 }
@@ -187,7 +199,7 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     opacity: 0;
 }
@@ -197,7 +209,7 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     opacity: 0;
 }
@@ -230,5 +242,6 @@ nav {
     background-position-y: 35%;
     transform: rotate(180deg);
     opacity: 0.3;
+    margin-top: 2vw;
 }
 
