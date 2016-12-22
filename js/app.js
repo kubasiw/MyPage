@@ -39,9 +39,12 @@ jQuery(document).ready(function(){
     
     var inAm = jQuery('.inAmSec');
     
+    var nav = jQuery('nav');
+    
 //    $(window).ready(function() {
 //        $('#fullpage').fullpage();
 //    });
+    
     
     function showMenu(){
         
@@ -49,10 +52,10 @@ jQuery(document).ready(function(){
         
         circle1.on('mouseover', function(){
             aLetter.css('left', '-22.22'+'%')
-                   .css('color', '#ff4000')
+                   .css('color', 'white')
                    .css('transition', '500ms');
             aboutBox.css('display', 'block');
-            jQuery(this).css('background-color', 'white')
+            jQuery(this).css('opacity', '1')
                         .css('transition', '500ms');
         });
         
@@ -61,7 +64,7 @@ jQuery(document).ready(function(){
                    .css('color', 'white')
                    .css('transition', '500ms');
             aboutBox.css('display', 'none');
-            circle1.css('background-color', '#ff4000')
+            circle1.css('opacity', '0.7')
                    .css('transition', '500ms');
         });
         
@@ -72,7 +75,7 @@ jQuery(document).ready(function(){
             aboutBox.css('display', 'inline-block')
                     .css('opacity', '1')
                     .css('transition', '500ms');
-            circle1.css('background-color', '#18D8D8')
+            circle1.css('opacity', '#1')
                    .css('transition', '500ms');
         });
         
@@ -82,7 +85,7 @@ jQuery(document).ready(function(){
             aboutBox.css('display', 'inline-block')
                     .css('opacity', '1')
                     .css('transition', '500ms');
-            circle1.css('background-color', '#18D8D8')
+            circle1.css('opacity', '1')
                    .css('transition', '500ms');
         });
         
@@ -92,12 +95,12 @@ jQuery(document).ready(function(){
         
         circle2.on('mouseover', function(){
             bLetter.css('left', '-22.22'+'%')
-                   .css('color', '#ff4000')
+                   .css('color', 'white')
                    .css('transition', '500ms');
             beBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            jQuery(this).css('background-color', 'white')
+            jQuery(this).css('opacity', '1')
                         .css('transition', '500ms');
         });
         
@@ -106,7 +109,7 @@ jQuery(document).ready(function(){
                    .css('color', 'white')
                    .css('transition', '500ms');
             beBox.css('display', 'none');
-            circle2.css('background-color', '#ff4000')
+            circle2.css('opacity', '0.7')
                    .css('transition', '500ms');
         });
         
@@ -117,7 +120,7 @@ jQuery(document).ready(function(){
             beBox.css('display', 'inline-block')
                     .css('opacity', '1')
                     .css('transition', '500ms');
-            circle2.css('background-color', '#1818D8')
+            circle2.css('opacity', '1')
                    .css('transition', '500ms');
         });
         
@@ -127,7 +130,7 @@ jQuery(document).ready(function(){
             beBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            circle2.css('background-color', '#1818D8')
+            circle2.css('opacity', '1')
                    .css('transition', '500ms');
         });
         
@@ -137,12 +140,12 @@ jQuery(document).ready(function(){
         
         circle3.on('mouseover', function(){
             cLetter.css('left', '-22.22'+'%')
-                   .css('color', '#ff4000')
+                   .css('color', 'white')
                    .css('transition', '500ms');
             ceBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            jQuery(this).css('background-color', 'white')
+            jQuery(this).css('opacity', '1')
                         .css('transition', '500ms');
         });
         
@@ -151,7 +154,7 @@ jQuery(document).ready(function(){
                    .css('color', 'white')
                    .css('transition', '500ms');
             ceBox.css('display', 'none');
-            circle3.css('background-color', '#ff4000')
+            circle3.css('opacity', '0.7')
                    .css('transition', '500ms');
         });
         
@@ -162,7 +165,7 @@ jQuery(document).ready(function(){
             ceBox.css('display', 'inline-block')
                     .css('opacity', '1')
                     .css('transition', '500ms');
-            circle3.css('background-color', '#9245DF')
+            circle3.css('opacity', '1')
                    .css('transition', '500ms');
         });
         
@@ -172,41 +175,41 @@ jQuery(document).ready(function(){
             ceBox.css('display', 'inline-block')
                  .css('opacity', '1')
                  .css('transition', '500ms');
-            circle3.css('background-color', '#9245DF')
+            circle3.css('opacity', '1')
                    .css('transition', '500ms');
         });
         
         // jQuery for home
         
         circle4.on('mouseover', function(){
-           jQuery(this).css('background-color', '#ff4000')
+           jQuery(this).css('opacity', '1')
                        .css('transition', '500ms');
         });
         
         circle4.on('mouseout', function(){
-           jQuery(this).css('background-color', '#ffffff')
+           jQuery(this).css('opacity', '0.3')
                        .css('transition', '500ms');
         });
         
         // jQuery for arrows
         
         circleUp.on('mouseover', function(){
-            jQuery(this).css('background-color', '#ff4000')
+            jQuery(this).css('opacity', '1')
                         .css('transition', '500ms');
         });
         
         circleUp.on('mouseout', function(){
-           jQuery(this).css('background-color', '#ffffff')
+           jQuery(this).css('opacity', '0.3')
                        .css('transition', '500ms');
         });
         
         circleDown.on('mouseover', function(){
-            jQuery(this).css('background-color', '#ff4000')
+            jQuery(this).css('opacity', '1')
                         .css('transition', '500ms');
         });
         
         circleDown.on('mouseout', function(){
-           jQuery(this).css('background-color', '#ffffff')
+           jQuery(this).css('opacity', '0.3')
                        .css('transition', '500ms');
         });
         
@@ -354,10 +357,6 @@ jQuery(document).ready(function(){
     setTimeout(pageStart, 500);
     
     
-    
-
-    
-
     
     
 }); // end of DOM

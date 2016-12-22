@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto Mono', 'Arial', 'Helvetica';
     font-size: 2vw;
     overflow-y: hidden;
+    background-color: #c5c1c0;
 }
 
 .absol {position: absolute;}
@@ -20,9 +21,10 @@ body {
 .section1 {
     width: 100%;
     position: relative;
-    background-image: url(/images/stopeff3.jpg);
+    background-image: url(/images/asphaltTop.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #5f5f5f;
     height: 100vh;
 }
 
@@ -42,6 +44,9 @@ body {
 
 .section4 {
     @extend %section;
+    background-image: url(/images/asphaltDown.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 header {
@@ -49,7 +54,7 @@ header {
 }
 
 nav {
-    margin-top: 0.5vw;
+    margin-top: 1.5vw;
     margin-bottom: 0.5vw;
     color: white;
     font-size: 2vw;
@@ -58,6 +63,7 @@ nav {
             color: white;
         }
 }
+
 
 .allCircleBox {
     position: relative;
@@ -73,7 +79,8 @@ nav {
 
 .circle1 {
     @extend %circle;
-    background-color: #ff4000;
+    background-color: #0e8044; /*green*/
+    opacity: 0.7;
     .aBox {
         span {
             position: absolute;
@@ -91,14 +98,15 @@ nav {
             position: absolute;
             top: 28%;
             left: 3%;
-            color: #ff4000;
+            color: white;
         }
 }
 
 
 .circle2 {
     @extend %circle;
-    background-color: #ff4000;
+    background-color: #ffce00; /*yellow*/
+    opacity: 0.7;
     .bBox {
         span {
             position: absolute;
@@ -116,13 +124,14 @@ nav {
             position: absolute;
             top: 28%;
             left: 3%;
-            color: #ff4000;
+            color: #white;
         }
 }
 
 .circle3 {
     @extend %circle;
-    background-color: #ff4000;
+    background-color: #f53240; /*red*/
+    opacity: 0.7;
     .cBox {
         span {
             position: absolute;
@@ -140,7 +149,7 @@ nav {
             position: absolute;
             top: 28%;
             left: 3%;
-            color: #ff4000;
+            color: white;
         }
 }
 
@@ -150,6 +159,7 @@ nav {
     background-image: url(/images/home.png);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.3;
 }
 
 
@@ -208,6 +218,7 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 35%;
+    opacity: 0.3;
 }
 
 .circleArrowDown {
@@ -218,12 +229,6 @@ nav {
     background-size: contain;
     background-position-y: 35%;
     transform: rotate(180deg);
+    opacity: 0.3;
 }
-
-.circleArrowDown {
-    @extend %circle;
-    background-color: white;
-    top: 0;
-}
-
 
