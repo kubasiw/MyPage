@@ -78,6 +78,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    color: snow;
 }
 
 header {
@@ -256,6 +257,36 @@ nav {
     align-items: center;
     font-size: 5rem;
 }
+
+.contactTextBox {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.socialRow {
+    
+}
+
+
+.github {
+    height: 10vw;
+    background-image: url(/images/GitHub-Mark-Light-120px-plus.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.linkedin {
+    height: 10vw;
+    background-image: url(/images/Logo-White-59px-TM.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 .circleArrowUp {
     @extend %circle;
