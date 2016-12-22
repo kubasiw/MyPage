@@ -41,6 +41,40 @@ jQuery(document).ready(function(){
     
     var nav = jQuery('nav');
     
+    
+    var startPage = jQuery('.start');
+    var progressBar = jQuery('.progressBar span');
+    
+    // starting animations
+    
+    function start() {
+        progressBar.css('width', '100%')
+                 .css('background-color', '#ffce00')
+                 .css('transition', '3s');
+        
+        jQuery('.count').each(function () {
+            jQuery(this).css('color', 'snow');
+            jQuery(this).prop('Counter',0).animate({
+                Counter: jQuery(this).text()
+            }, {
+                duration: 3000,
+                easing: 'swing',
+                step: function (now) {
+                    jQuery(this).text(Math.ceil(now));
+                }
+            });
+        });
+        
+        function hideStart() {
+            startPage.fadeOut('slow');
+                     
+        };
+        setTimeout(hideStart,3500);
+        
+    };
+    setTimeout(start, 2000);
+    
+    
 //    $(window).ready(function() {
 //        $('#fullpage').fullpage();
 //    });
@@ -48,6 +82,7 @@ jQuery(document).ready(function(){
     
     var nav = jQuery('nav');
     var ul = jQuery('.menu').find('ul');
+    
     
     function stickyMenu(){
         var position = nav.offset().top;
@@ -74,10 +109,10 @@ jQuery(document).ready(function(){
         
     });
     
-    
+    // adding effects on menu buttons:
     function showMenu(){
         
-        // jQuery for A
+        // for whole "a" button
         
         circle1.on('mouseover', function(){
             aLetter.css('left', '-22.22'+'%')
@@ -119,7 +154,7 @@ jQuery(document).ready(function(){
         });
         
         
-        // jQuery for B
+        // for whole "b" button
         
         
         circle2.on('mouseover', function(){
@@ -164,7 +199,7 @@ jQuery(document).ready(function(){
         });
         
         
-        // jQuery for C
+        // for whole "c" button
         
         
         circle3.on('mouseover', function(){
@@ -208,7 +243,7 @@ jQuery(document).ready(function(){
                    .css('transition', '500ms');
         });
         
-        // jQuery for home
+        // for whole "HOME" button
         
         circle4.on('mouseover', function(){
            jQuery(this).css('opacity', '1')
@@ -246,6 +281,8 @@ jQuery(document).ready(function(){
     showMenu();
     
     
+    // functions for navigation - looking section on page
+    
     function lookForSection(){
         
         var anchor = jQuery("nav a");
@@ -253,9 +290,9 @@ jQuery(document).ready(function(){
         var circleBoxPort = jQuery('.circleBoxPort');
         var circleBoxCont = jQuery('.circleBoxCont');
         
-        circle1.on('click', function(){
-            var id = jQuery(this).attr('href');
-            var elemOffset = jQuery(id).offset();
+        circle1.on('click', function(){          // while clicking on a circle
+            var id = jQuery(this).attr('href');  // id will get href from circA
+            var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
             jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
                 circleBoxAbout.animate({'opacity':'1'},300);
@@ -308,7 +345,7 @@ jQuery(document).ready(function(){
     
         });
         
-        
+        // functions for arrowButtons in particular section
         
         upAbout.on('click', function(){
             var id = jQuery(this).attr('href');
@@ -372,24 +409,24 @@ jQuery(document).ready(function(){
     lookForSection();
     
     
-    function pageStart() {
-        
-        var myName = jQuery('.myName');
-    
-        myName.animate({'top':'50%', 'font-size':'6'+'vw'},1100)
-              .css('color', '#ffffff')
-              .css('transition', '2550ms')
-              .animate({  borderSpacing: -10.5 }, {
-                    step: function(now,fx) {
-                      jQuery(this).css('-webkit-transform','rotate('+now+'deg)'); 
-                      jQuery(this).css('-moz-transform','rotate('+now+'deg)');
-                      jQuery(this).css('transform','rotate('+now+'deg)');
-                    },
-                    duration:'slow'
-                },'linear');
-
-    };
-    setTimeout(pageStart, 500);
+//    function pageStart() {
+//        
+//        var myName = jQuery('.myName');
+//    
+//        myName.animate({'top':'50%', 'font-size':'6'+'vw'},1100)
+//              .css('color', '#ffffff')
+//              .css('transition', '2550ms')
+//              .animate({  borderSpacing: -10.5 }, {
+//                    step: function(now,fx) {
+//                      jQuery(this).css('-webkit-transform','rotate('+now+'deg)'); 
+//                      jQuery(this).css('-moz-transform','rotate('+now+'deg)');
+//                      jQuery(this).css('transform','rotate('+now+'deg)');
+//                    },
+//                    duration:'slow'
+//                },'linear');
+//
+//    };
+//    setTimeout(pageStart, 500);
     
     
     
