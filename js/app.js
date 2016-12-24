@@ -79,6 +79,7 @@ jQuery(document).ready(function(){
 //        $('#fullpage').fullpage();
 //    });
     
+    // sticky menu
     
     var nav = jQuery('nav');
     var ul = jQuery('.menu').find('ul');
