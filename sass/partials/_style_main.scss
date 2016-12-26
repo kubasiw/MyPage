@@ -81,6 +81,7 @@ body {
     color: snow;
 }
 
+
 header {
     overflow: hidden;
 }
@@ -257,6 +258,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 5rem;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .contactTextBox {
@@ -267,6 +269,36 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 5rem;
+}
+
+.portBox {
+    position: relative;
+    padding:2vw;
+    width: 80%;
+    height: 70%;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.portBox2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 66%;
+}
+
+.port1 {
+    position: relative;
+    width:45%;
+    height:90%;
+    border: 1vw solid rgba(255, 255, 255, 0.3);
+}
+
+.port2 {
+    position: relative;
+    width:45%;
+    height:90%;
+    border: 1vw solid rgba(255, 255, 255, 0.3);
 }
 
 
@@ -291,4 +323,12 @@ nav {
     transform: rotate(180deg);
     opacity: 0.3;
     margin-top: 2vw;
+}
+
+.copy {
+    font-size: 1rem;
+    font-size: 1rem;
+    bottom: 2%;
+    right: 2%;
+    position: absolute;
 }
