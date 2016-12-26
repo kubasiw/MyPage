@@ -292,6 +292,11 @@ nav {
     width:45%;
     height:90%;
     border: 1vw solid rgba(255, 255, 255, 0.3);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    
 }
 
 .port2 {
@@ -299,6 +304,9 @@ nav {
     width:45%;
     height:90%;
     border: 1vw solid rgba(255, 255, 255, 0.3);
+    background-image: url(/images/sitmin.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
 }
 
 
