@@ -67,6 +67,7 @@ jQuery(document).ready(function(){
         
         function hideStart() {
             startPage.fadeOut('slow');
+            jQuery('body').css('overflow-y', 'visible');
                      
         };
         setTimeout(hideStart,3500);
@@ -74,25 +75,24 @@ jQuery(document).ready(function(){
     };
     setTimeout(start, 2000);
     
-    
-//    $(window).ready(function() {
-//        $('#fullpage').fullpage();
-//    });
+
     
     // sticky menu
     
     var nav = jQuery('nav');
-    var ul = jQuery('.menu').find('ul');
-    
+    var allCircle = jQuery('.allCircleBox');
     
     function stickyMenu(){
         var position = nav.offset().top;
+        
         jQuery(window).on('scroll', function(){
 
              var scrollTop = jQuery(window).scrollTop();
              var allCircleBox = jQuery('.allCircleBox');
+            
+            
 
-             if (scrollTop > position) {
+             if (scrollTop > (position - position)) {
                 nav.addClass('sticky')
                 allCircleBox.addClass('stickyBox')
             } else {
@@ -103,12 +103,12 @@ jQuery(document).ready(function(){
     };
     stickyMenu();
     
-    jQuery(window).on('resize', function(){
-
-        jQuery(window).off('scroll');
-        stickyMenu();
-        
-    });
+//    jQuery(window).on('resize', function(){
+//
+//        jQuery(window).off('scroll');
+//        stickyMenu();
+//        
+//    });
     
     // adding effects on menu buttons:
     function showMenu(){

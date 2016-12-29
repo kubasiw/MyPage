@@ -47,6 +47,10 @@ body {
     border-radius: 0.7vw;
 }
 
+.page-section {
+    height: 100vh;
+}
+
 
 .section1 {
     width: 100%;
@@ -222,7 +226,7 @@ nav {
 }
 
 .circleBoxAbout {
-    height: 100vh;
+    height: 10vh;
     position: relative;
     display: flex;
     flex-direction: column;
