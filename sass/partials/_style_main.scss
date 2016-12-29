@@ -38,6 +38,7 @@ body {
     padding: 0.5vw;
     border-radius: 1vw;
     background-color: #1a1a1a;
+    opacity: 1;
 }
 
 .progressBar span {
@@ -49,6 +50,20 @@ body {
 
 .page-section {
     height: 100vh;
+}
+
+.welcomeText {
+    position: absolute;
+    display: flex;
+}
+.welcomeCircle {
+    @extend %circle;
+    background-color:darkorange;
+    margin: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
 }
 
 
@@ -115,7 +130,7 @@ nav {
     margin-top: 1.5vw;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.3);
-    transition: 300ms;
+    transition: 400ms;
 }
 
 .allCircleBox {

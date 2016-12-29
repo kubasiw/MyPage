@@ -48,32 +48,57 @@ jQuery(document).ready(function(){
     // starting animations
     
     function start() {
-        progressBar.css('width', '100%')
-                 .css('background-color', '#ffce00')
-                 .css('transition', '3s');
         
-        jQuery('.count').each(function () {
-            jQuery(this).css('color', 'snow');
-            jQuery(this).prop('Counter',0).animate({
-                Counter: jQuery(this).text()
-            }, {
-                duration: 3000,
-                easing: 'swing',
-                step: function (now) {
-                    jQuery(this).text(Math.ceil(now));
-                }
+        function progress() {
+            progressBar.css('width', '100%')
+                     .css('background-color', '#ffce00')
+                     .css('transition', '3s');
+
+            jQuery('.count').each(function () {
+                jQuery(this).css('color', 'snow');
+                jQuery(this).prop('Counter',0).animate({
+                    Counter: jQuery(this).text()
+                }, {
+                    duration: 3000,
+                    easing: 'swing',
+                    step: function (now) {
+                        jQuery(this).text(Math.ceil(now));
+                    }
+                });
             });
-        });
+        }
+        progress();
+        
+        function welcome() {
+            
+            progressBar.animate({'opacity':'0'},3200, function() {
+                jQuery('.percent').animate({'opacity':'0'},100, function() {
+                    jQuery('.circ1').animate({'opacity':'1'},150);
+                    jQuery('.circ2').animate({'opacity':'1'},300);
+                    jQuery('.circ3').animate({'opacity':'1'},450);
+                    jQuery('.circ4').animate({'opacity':'1'},500);
+                    jQuery('.circ5').animate({'opacity':'1'},650);
+                    jQuery('.circ6').animate({'opacity':'1'},800);
+                    jQuery('.circ7').animate({'opacity':'1'},950);
+                    jQuery('.circ8').animate({'opacity':'1'},1100);
+                });
+            });
+        };
+        welcome();
         
         function hideStart() {
             startPage.fadeOut('slow');
             jQuery('body').css('overflow-y', 'visible');
                      
         };
-        setTimeout(hideStart,3500);
+        setTimeout(hideStart,5500);
         
     };
-    setTimeout(start, 2000);
+    start();
+    
+    jQuery(document).ready(function() {
+        jQuery('#fullpage').fullpage();
+    });
     
 
     
