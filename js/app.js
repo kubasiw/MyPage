@@ -437,7 +437,7 @@ jQuery(document).ready(function(){
         
         portBox1.on('mouseover', function(){
             portBox1div.animate({'opacity':'0.9'},300, function(){
-                portBox1div.css('transform', 'scale(1.1)')
+                portBox1div.css('transform', 'scale(1.2)')
                            .css('transition', '150ms');
             });
         });
@@ -455,7 +455,7 @@ jQuery(document).ready(function(){
         
         portBox2.on('mouseover', function(){
             portBox2div.animate({'opacity':'0.9'},300, function(){
-                portBox2div.css('transform', 'scale(1.1)')
+                portBox2div.css('transform', 'scale(1.2)')
                            .css('transition', '150ms');
             });
         });
@@ -466,8 +466,6 @@ jQuery(document).ready(function(){
                            .css('transition', '150ms');
             });
         });
-        
-        
         
     };
     port();

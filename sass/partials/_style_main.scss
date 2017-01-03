@@ -91,6 +91,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    a {
+        text-decoration: none;
+        color: black;
+    }
     
 }
 
@@ -308,6 +312,7 @@ nav {
         padding: 1vw;
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: white;
         opacity: 0;
     }
@@ -320,8 +325,8 @@ nav {
     background-image: url(/images/sitmin.png);
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: center;
     cursor: pointer;
     div {
         width: 25vw;
@@ -329,6 +334,7 @@ nav {
         padding: 1vw;
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: white;
         opacity: 0;
     }
@@ -337,35 +343,24 @@ nav {
 .portfolioBox3 {
     width: 25vw;
     height: 25vw;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: #727272;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-.lilCirc1 {
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
-    background-color: #0e8044;
-    opacity: 0.6;
-}
 
-.lilCirc2 {
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
-    background-color: #ffce00;
-    opacity: 0.6;
-}
+
+
+
 
 .lilCirc3 {
     width: 10%;
     height: 10%;
     border-radius: 50%;
     background-color: #f53240;
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 .circleArrowUp {
