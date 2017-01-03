@@ -430,6 +430,49 @@ jQuery(document).ready(function(){
     lookForSection();
     
     
+    function port() {
+      
+        var portBox1 = jQuery('.portfolioBox1');
+        var portBox1div = jQuery('.portfolioBox1 div');
+        
+        portBox1.on('mouseover', function(){
+            portBox1div.animate({'opacity':'0.9'},300, function(){
+                portBox1div.css('transform', 'scale(1.1)')
+                           .css('transition', '150ms');
+            });
+        });
+        
+        portBox1.on('mouseout', function(){
+            portBox1div.animate({'opacity':'0'},300, function(){
+                portBox1div.css('transform', 'scale(1)')
+                           .css('transition', '150ms');
+            });
+        });
+        
+        
+        var portBox2 = jQuery('.portfolioBox2');
+        var portBox2div = jQuery('.portfolioBox2 div');
+        
+        portBox2.on('mouseover', function(){
+            portBox2div.animate({'opacity':'0.9'},300, function(){
+                portBox2div.css('transform', 'scale(1.1)')
+                           .css('transition', '150ms');
+            });
+        });
+        
+        portBox2.on('mouseout', function(){
+            portBox2div.animate({'opacity':'0'},300, function(){
+                portBox2div.css('transform', 'scale(1)')
+                           .css('transition', '150ms');
+            });
+        });
+        
+        
+        
+    };
+    port();
+    
+    
     
     
     
