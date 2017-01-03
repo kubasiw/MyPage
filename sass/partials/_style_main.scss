@@ -88,6 +88,9 @@ body {
 
 .section3 {
     @extend %section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -290,45 +293,39 @@ nav {
     font-size: 5rem;
 }
 
-.portBox {
-    position: relative;
-    padding:2vw;
+.portfolioBox {
     width: 80%;
     height: 70%;
-    top: 5%;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.portBox2 {
+    background-color: rgba(255,255,255, 0.5);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 66%;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.port1 {
-    position: relative;
-    width:45%;
-    height:90%;
-    border: 1vw solid rgba(255, 255, 255, 0.3);
-    img {
-        width: 100%;
+.portfolioRow1 {
+    height: 40%;
+    div {
+        display: flex;
+        justify-content: space-around;
         height: 100%;
+        div {
+            background-color: aqua;
+            height: 100%;
+        }
     }
-    
 }
 
-.port2 {
-    position: relative;
-    width:45%;
-    height:90%;
-    border: 1vw solid rgba(255, 255, 255, 0.3);
-    background-image: url(/images/sitmin.jpg);
-    background-repeat: no-repeat;
-    background-size:100% 100%;
+.portfolioRow2 {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    div {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        background-color: azure;
+    }
 }
-
-
 
 .circleArrowUp {
     @extend %circle;

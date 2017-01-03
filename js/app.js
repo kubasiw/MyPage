@@ -96,11 +96,6 @@ jQuery(document).ready(function(){
     };
     start();
     
-    jQuery(document).ready(function() {
-        jQuery('#fullpage').fullpage();
-    });
-    
-
     
     // sticky menu
     
@@ -434,25 +429,6 @@ jQuery(document).ready(function(){
     };
     lookForSection();
     
-    
-//    function pageStart() {
-//        
-//        var myName = jQuery('.myName');
-//    
-//        myName.animate({'top':'50%', 'font-size':'6'+'vw'},1100)
-//              .css('color', '#ffffff')
-//              .css('transition', '2550ms')
-//              .animate({  borderSpacing: -10.5 }, {
-//                    step: function(now,fx) {
-//                      jQuery(this).css('-webkit-transform','rotate('+now+'deg)'); 
-//                      jQuery(this).css('-moz-transform','rotate('+now+'deg)');
-//                      jQuery(this).css('transform','rotate('+now+'deg)');
-//                    },
-//                    duration:'slow'
-//                },'linear');
-//
-//    };
-//    setTimeout(pageStart, 500);
     
     
     
