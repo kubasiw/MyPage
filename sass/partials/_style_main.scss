@@ -299,6 +299,7 @@ nav {
 .portfolioBox1 {
     width: 25vw;
     height: 25vw;
+    border-radius: 10%;
     background-color: rgba(255,255,255, 0.5);
     background-image: url(/images/855min.png);
     background-size: cover;
@@ -309,18 +310,22 @@ nav {
     div {
         width: 25vw;
         height: 25vw;
+        border-radius: 10%;
         padding: 1vw;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: white;
         opacity: 0;
+        border: 0.3vw solid gray;
+        text-align: center;
     }
 }
 
 .portfolioBox2 {
     width: 25vw;
     height: 25vw;
+    border-radius: 10%;
     background-color: rgba(255,255,255, 0.5);
     background-image: url(/images/sitmin.png);
     background-size: cover;
@@ -331,23 +336,27 @@ nav {
     div {
         width: 25vw;
         height: 25vw;
+        border-radius: 10%;
         padding: 1vw;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: white;
         opacity: 0;
+        border: 0.3vw solid gray;
+        text-align: center;
     }
 }
 
 .portfolioBox3 {
     width: 25vw;
     height: 25vw;
+    border-radius: 50%;
     background-color: #727272;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    border: 0.3vw solid gray;
 }
 
 
