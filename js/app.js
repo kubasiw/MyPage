@@ -467,6 +467,21 @@ jQuery(document).ready(function(){
             });
         });
         
+        var portBox3 = jQuery('.portfolioBox3');
+        var portBox1span = jQuery('.portfolioBox3 span');
+        
+        portBox3.on('mouseover', function (){
+            jQuery(this).css('transform', 'scale(0.9)')
+                        .css('background-color', 'rgba(255, 255, 255, 0.9)')
+                        .css('transition','150ms');
+        });
+        
+        portBox3.on('mouseout', function (){
+            jQuery(this).css('transform', 'scale(1)')
+                        .css('background-color', '#727272')
+                        .css('transition','150ms');
+        });
+        
     };
     port();
     
