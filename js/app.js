@@ -50,6 +50,11 @@ jQuery(document).ready(function(){
     function start() {
         
         function progress() {
+            jQuery('.section1').hide();
+            jQuery('.section2').hide();
+            jQuery('.section3').hide();
+            jQuery('.section4').hide();
+            
             progressBar.css('width', '100%')
                      .css('background-color', '#ffce00')
                      .css('transition', '3s');
@@ -89,6 +94,10 @@ jQuery(document).ready(function(){
         function hideStart() {
             startPage.fadeOut('slow');
             jQuery('body').css('overflow-y', 'visible');
+            jQuery('.section1').show();
+            jQuery('.section2').show();
+            jQuery('.section3').show();
+            jQuery('.section4').show();
                      
         };
         setTimeout(hideStart,5500);
