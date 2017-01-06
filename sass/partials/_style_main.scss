@@ -79,8 +79,14 @@ body {
 
 .sectionBlank {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     background-color: #101010;
+    display: flex;
+    align-items: center;
+    div {
+        width: 100%;
+        border-bottom: 0.25vw dashed rgba(255, 255, 255, 0.3);
+    }
 }
 
 .section2 {
@@ -304,6 +310,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(14, 128, 68, 0.7);
+    border-top: 0.5vw solid rgba(255,255,255, 0.2);
+    border-bottom: 0.5vw solid rgba(255,255,255, 0.2);
     div:first-child {
         width: 30vw;
         height: 30vw;
@@ -330,6 +338,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 206, 0, 0.5);
+    border-top: 0.5vw solid rgba(255,255,255, 0.2);
+    border-bottom: 0.5vw solid rgba(255,255,255, 0.2);
 }
 
 .section4box {
@@ -339,6 +349,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(245, 50, 64, 0.5);
+    border-top: 0.5vw solid rgba(255,255,255, 0.2);
+    border-bottom: 0.5vw solid rgba(255,255,255, 0.2);
     div {
         display: flex;
         flex-direction: column;
@@ -478,4 +490,10 @@ nav {
     bottom: 2%;
     right: 2%;
     position: absolute;
+}
+
+footer {
+    font-size: 1rem;
+    opacity: 0.4;
+    
 }
