@@ -54,8 +54,10 @@ jQuery(document).ready(function(){
             jQuery('.section2').hide();
             jQuery('.section3').hide();
             jQuery('.section4').hide();
+            jQuery('.sectionBlank').hide();
             
-            progressBar.css('width', '100%')
+            
+        progressBar.css('width', '100%')
                      .css('background-color', '#ffce00')
                      .css('transition', '3s');
 
@@ -98,12 +100,16 @@ jQuery(document).ready(function(){
             jQuery('.section2').show();
             jQuery('.section3').show();
             jQuery('.section4').show();
+            jQuery('.sectionBlank').show();
                      
         };
         setTimeout(hideStart,5500);
         
     };
     start();
+    
+    
+    
     
     
     // sticky menu
