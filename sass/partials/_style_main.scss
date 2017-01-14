@@ -312,7 +312,7 @@ nav {
     background-color: rgba(14, 128, 68, 0.7);
     border-top: 0.5vw solid rgba(255,255,255, 0.2);
     border-bottom: 0.5vw solid rgba(255,255,255, 0.2);
-    div:first-child {
+    .fotoBox {
         width: 30vw;
         height: 30vw;
         display: flex;
@@ -321,8 +321,11 @@ nav {
         background-color: rgba(255,255,255, 0.03);
         border-radius: 10%;
         cursor: pointer;
-        img {
-            width: 25%;
+        .me {
+            width: 30%;
+            height: 30%;
+            background-image: url(/images/me.png);
+            background-size: cover;
         }
     }
     div:last-child {
@@ -340,6 +343,16 @@ nav {
         background-color: rgba(255,255,255, 0);
     }
 }
+
+.zuzia {
+        position: absolute;
+        width: 83%;
+        transform: rotate(20deg);
+        display: none;
+        top: -18%;
+        left: 17%;
+        }
+        
 
 .projects {
     width: 100%;
