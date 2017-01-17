@@ -55,6 +55,7 @@ jQuery(document).ready(function(){
             jQuery('.section3').hide();
             jQuery('.section4').hide();
             jQuery('.sectionBlank').hide();
+            jQuery('.afterNav').hide();
             
             
         progressBar.css('width', '100%')
@@ -101,6 +102,7 @@ jQuery(document).ready(function(){
             jQuery('.section3').show();
             jQuery('.section4').show();
             jQuery('.sectionBlank').show();
+            jQuery('.afterNav').show();
                      
         };
         setTimeout(hideStart,5500);
