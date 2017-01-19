@@ -1,15 +1,13 @@
 @media (max-width: 900px) {
     .allCircleBox {
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
-    .circleBox {
-        width: 100%;
-        padding: 1%;
-        height: 7.5vw;
-        transform: scale(1.2);
+    .hamburger {
+        visibility:visible;
     }
 }
+
+
 
 @media (max-width: 640px) {
     

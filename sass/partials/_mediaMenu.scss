@@ -1,0 +1,26 @@
+.hamburger {
+    visibility: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+        position: relative;
+        width: 50%;
+        height: 10%;
+        margin: 5%;
+        border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+        background-color: black;
+        
+    }
+}
+
+.mobileBox {
+    
+}
