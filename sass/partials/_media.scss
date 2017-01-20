@@ -1,12 +1,10 @@
 @media (max-width: 900px) {
+    .circleBoxMobile {
+        display: flex;
+    }
     .allCircleBox {
-        display: none;
-    }
-    .hamburger {
-        visibility:visible;
-    }
-    .mobileBox {
-        visibility: visible;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
