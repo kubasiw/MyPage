@@ -110,16 +110,31 @@ jQuery(document).ready(function(){
     };
     start();
     
+    //mobile menu
     
+//    function mobileMenu() {
+//        
+//        var circleBoxMobile = jQuery('.circleBoxMobile');
+//        var circleBox = jQuery('.circleBox');
+//        
+//        circleBoxMobile.on('click', function(){
+//            circleBox.toggle();
+//        });
+//        
+//    };
+//    mobileMenu();
     
+
     
     
     // sticky menu
     
-    var nav = jQuery('nav');
-    var allCircle = jQuery('.allCircleBox');
+    
     
     function stickyMenu(){
+        
+        var nav = jQuery('.normalNav');
+        var allCircle = jQuery('.allCircleBox');
         var position = nav.offset().top;
         
         jQuery(window).on('scroll', function(){
@@ -139,6 +154,32 @@ jQuery(document).ready(function(){
         });
     };
     stickyMenu();
+    
+    
+    // Mobile sticky menu
+    
+    
+//    function stickyMenuMobile(){
+//        
+//        var nav = jQuery('.mobileNav');
+//        var allCircle = jQuery('.circleBoxMobile');
+//        var position = nav.offset().top;
+//        
+//        jQuery(window).on('scroll', function(){
+//
+//             var scrollTop = jQuery(window).scrollTop();
+//             var allCircleBox = jQuery('.allCircleBox');
+//
+//             if (scrollTop > (position - position)) {
+//                nav.addClass('sticky')
+//                allCircleBox.addClass('stickyBox')
+//            } else {
+//                nav.removeClass('sticky')
+//                allCircleBox.removeClass('stickyBox')
+//            }
+//        });
+//    };
+//    stickyMenuMobile();
     
 //    jQuery(window).on('resize', function(){
 //
