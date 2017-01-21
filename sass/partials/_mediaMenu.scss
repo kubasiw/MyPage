@@ -3,37 +3,27 @@
     position: fixed;
     width: 100%;
     height: 40vw;
+    font-size: 1.5rem;
     //background-color: rgba(255,255,255,0.1);
     z-index: 1;
 }
 
-.mobileNavBox {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255,255,255,0.2);
-    border-radius: 2rem 2rem 2rem 2rem;
+.hamBox {
+
 }
 
-.hamBox {
-    width: 25%;
-    height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    //background-color: rgba(255,255,255,0.3);
     .hamburger {
-        height: 4.5em;
-        width: 4.5em;
+        height: 3.5em;
+        width: 3.5em;
         border-radius: 50%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        background-color: aliceblue;
+        background-color: white;
+        margin-bottom: 0.5rem;
         span {
             width: 50%;
             height: 10%;
@@ -42,38 +32,45 @@
             background-color: black;
         }
     }
-}
 
 .about {
-    width: 100%;
+    width: 40%;
     height: 18.75%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    //display: none;
 }
 
 .portfolio {
-    width: 100%;
+    width: 40%;
     height: 18.75%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    //display: none;
 }
 
 .contact {
-    width: 100%;
+    width: 40%;
     height: 18.75%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    //display: none;
 }
 
 .home {
-    width: 100%;
+    width: 40%;
     height: 18.75%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    //display: none;
 }
 
 
