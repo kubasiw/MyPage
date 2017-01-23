@@ -110,26 +110,8 @@ jQuery(document).ready(function(){
     };
     start();
     
-    //mobile menu
-    
-//    function mobileMenu() {
-//        
-//        var circleBoxMobile = jQuery('.circleBoxMobile');
-//        var circleBox = jQuery('.circleBox');
-//        
-//        circleBoxMobile.on('click', function(){
-//            circleBox.toggle();
-//        });
-//        
-//    };
-//    mobileMenu();
-    
 
-    
-    
     // sticky menu
-    
-    
     
     function stickyMenu(){
         
@@ -156,37 +138,6 @@ jQuery(document).ready(function(){
     stickyMenu();
     
     
-    // Mobile sticky menu
-    
-    
-//    function stickyMenuMobile(){
-//        
-//        var nav = jQuery('.mobileNav');
-//        var allCircle = jQuery('.circleBoxMobile');
-//        var position = nav.offset().top;
-//        
-//        jQuery(window).on('scroll', function(){
-//
-//             var scrollTop = jQuery(window).scrollTop();
-//             var allCircleBox = jQuery('.allCircleBox');
-//
-//             if (scrollTop > (position - position)) {
-//                nav.addClass('sticky')
-//                allCircleBox.addClass('stickyBox')
-//            } else {
-//                nav.removeClass('sticky')
-//                allCircleBox.removeClass('stickyBox')
-//            }
-//        });
-//    };
-//    stickyMenuMobile();
-    
-//    jQuery(window).on('resize', function(){
-//
-//        jQuery(window).off('scroll');
-//        stickyMenu();
-//        
-//    });
     
     // adding effects on menu buttons:
     function showMenu(){
@@ -358,6 +309,20 @@ jQuery(document).ready(function(){
         
     };
     showMenu();
+    
+    function mobileOnOff() {
+        var hamburger = jQuery('.hamburger');
+        var mobileNav = jQuery('.mobileNav');
+        var hamDiv = jQuery('.hamburger div');
+        
+        hamburger.on('click', function(){
+            
+            mobileNav.toggle(function(){
+                jQuery(this).animate({'opacity':'1'},100);
+            });
+        })
+    };
+    mobileOnOff();
     
     
     // functions for navigation - looking section on page

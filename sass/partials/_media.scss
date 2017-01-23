@@ -1,3 +1,10 @@
+@media (min-width: 901px) {
+    .mobileNav {
+        display:none;
+    }
+}
+
+
 @media (max-width: 900px) {
     .normalNav {
         display: none;
@@ -10,15 +17,29 @@
         justify-content: center;
     }
     .mobileNav {
-        display: 0;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .about {
+            display: flex;
+        }
+        .portfolio {
+            display: flex;
+        }
+        .contact {
+            display: flex;
+        }
+        .home2 {
+            display: flex;
+        }
     }
     .hamburger {
         display: flex;
     }
 }
+
+
 
 
 
