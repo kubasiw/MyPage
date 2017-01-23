@@ -368,6 +368,10 @@ jQuery(document).ready(function(){
         var circleBoxAbout = jQuery('.circleBoxAbout');
         var circleBoxPort = jQuery('.circleBoxPort');
         var circleBoxCont = jQuery('.circleBoxCont');
+        var aboutMob = jQuery('.about');
+        var portMob = jQuery('.portfolio');
+        var contactMob = jQuery('.contact');
+        var homeMob = jQuery('.home2');
         
         circle1.on('click', function(){          // while clicking on a circle
             var id = jQuery(this).attr('href');  // id will get href from circA
@@ -475,14 +479,55 @@ jQuery(document).ready(function(){
             });
         });
         
-//        jQuery(window).bind('mousewheel', function(event) {
-//            if (event.originalEvent.wheelDelta >= 0) {
-//                console.log('Scroll up');
-//            }
-//            else {
-//                console.log('Scroll down');
-//            }
-//        });
+        // looking Mobile
+        
+        aboutMob.on('click', function(){          // while clicking on a circle
+            var id = jQuery(this).attr('href');  // id will get href from circA
+            var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
+                circleBoxAbout.animate({'opacity':'1'},300);
+                circleBoxPort.animate({'opacity':'0'},300);
+                circleBoxCont.animate({'opacity':'0'},300);
+            });
+
+        });
+        
+        portMob.on('click', function(){          // while clicking on a circle
+            var id = jQuery(this).attr('href');  // id will get href from circA
+            var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
+                circleBoxAbout.animate({'opacity':'1'},300);
+                circleBoxPort.animate({'opacity':'0'},300);
+                circleBoxCont.animate({'opacity':'0'},300);
+            });
+
+        });
+        
+        contactMob.on('click', function(){          // while clicking on a circle
+            var id = jQuery(this).attr('href');  // id will get href from circA
+            var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
+                circleBoxAbout.animate({'opacity':'1'},300);
+                circleBoxPort.animate({'opacity':'0'},300);
+                circleBoxCont.animate({'opacity':'0'},300);
+            });
+
+        });
+        
+        homeMob.on('click', function(){          // while clicking on a circle
+            var id = jQuery(this).attr('href');  // id will get href from circA
+            var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
+            
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
+                circleBoxAbout.animate({'opacity':'1'},300);
+                circleBoxPort.animate({'opacity':'0'},300);
+                circleBoxCont.animate({'opacity':'0'},300);
+            });
+
+        });
         
     };
     lookForSection();

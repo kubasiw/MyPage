@@ -2,8 +2,15 @@
     .normalNav {
         display: none;
     }
-    .mobileNav {
+    nav {
+        margin: 0;
+    }
+    header {
         display: flex;
+        justify-content: center;
+    }
+    .mobileNav {
+        display: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
