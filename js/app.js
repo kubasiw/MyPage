@@ -317,6 +317,9 @@ jQuery(document).ready(function(){
         
         hamburger.on('click', function(){
             
+            jQuery(this).toggleClass('on');
+            
+            
             mobileNav.toggle(function(){
                 jQuery(this).animate({'opacity':'1'},100);
             });
