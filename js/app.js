@@ -77,22 +77,22 @@ jQuery(document).ready(function(){
         }
         progress();
         
-        function welcome() {
-            
-            progressBar.animate({'opacity':'0'},3200, function() {
-                jQuery('.percent').animate({'opacity':'0'},100, function() {
-                    jQuery('.circ1').animate({'opacity':'1'},150);
-                    jQuery('.circ2').animate({'opacity':'1'},300);
-                    jQuery('.circ3').animate({'opacity':'1'},450);
-                    jQuery('.circ4').animate({'opacity':'1'},500);
-                    jQuery('.circ5').animate({'opacity':'1'},650);
-                    jQuery('.circ6').animate({'opacity':'1'},800);
-                    jQuery('.circ7').animate({'opacity':'1'},950);
-                    jQuery('.circ8').animate({'opacity':'1'},1100);
-                });
-            });
-        };
-        welcome();
+//        function welcome() {
+//            
+//            progressBar.animate({'opacity':'0'},3200, function() {
+//                jQuery('.percent').animate({'opacity':'0'},100, function() {
+//                    jQuery('.circ1').animate({'opacity':'1'},150);
+//                    jQuery('.circ2').animate({'opacity':'1'},300);
+//                    jQuery('.circ3').animate({'opacity':'1'},450);
+//                    jQuery('.circ4').animate({'opacity':'1'},500);
+//                    jQuery('.circ5').animate({'opacity':'1'},650);
+//                    jQuery('.circ6').animate({'opacity':'1'},800);
+//                    jQuery('.circ7').animate({'opacity':'1'},950);
+//                    jQuery('.circ8').animate({'opacity':'1'},1100);
+//                });
+//            });
+//        };
+//        welcome();
         
         function hideStart() {
             startPage.fadeOut('slow');
@@ -105,7 +105,7 @@ jQuery(document).ready(function(){
             jQuery('.afterNav').show();
                      
         };
-        setTimeout(hideStart,5500);
+        setTimeout(hideStart,3500);
         
     };
     start();
