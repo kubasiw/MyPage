@@ -314,16 +314,21 @@ jQuery(document).ready(function(){
         var hamburger = jQuery('.hamburger');
         var mobileNav = jQuery('.mobileNav');
         var hamDiv = jQuery('.hamburger div');
+        var hamDivSpan1 = jQuery('.span1');
+        var hamDivSpan2 = jQuery('.span2');
+        var hamDivSpan3 = jQuery('.span3');
         
         hamburger.on('click', function(){
             
-            jQuery(this).toggleClass('on');
-            
-            
-            mobileNav.toggle(function(){
-                jQuery(this).animate({'opacity':'1'},100);
-            });
-        })
+            if (hamburger.hasClass('on')) {
+                hamburger.removeClass('on');
+                mobileNav.css('display', 'none');
+            } else {
+                hamburger.addClass('on')
+                hamDivSpan1.css('opacity','0');
+                mobileNav.css('display', 'flex');
+            };
+        });
     };
     mobileOnOff();
     
