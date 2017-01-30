@@ -325,7 +325,14 @@ jQuery(document).ready(function(){
                 mobileNav.css('display', 'none');
             } else {
                 hamburger.addClass('on')
-                hamDivSpan1.css('opacity','0');
+                hamDivSpan2.hide();
+                
+                hamDivSpan1.css('transform','rotate(45deg)')
+                           .css('transition', '100ms')
+                           .css('margin','0');
+                hamDivSpan3.css('transform','rotate(-45deg)')
+                           .css('transition', '100ms')
+                           .css('margin','0');
                 mobileNav.css('display', 'flex');
             };
         });
