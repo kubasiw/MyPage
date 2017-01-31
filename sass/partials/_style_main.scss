@@ -352,8 +352,8 @@ nav {
         border-radius: 10%;
         cursor: pointer;
         .me {
-            width: 50%;
-            height: 50%;
+            width: 60%;
+            height: 60%;
             background-image: url(/images/me.png);
             background-size: cover;
         }
@@ -371,13 +371,13 @@ nav {
         text-align: justify;
         color: #f2f2f2;
         background-color: rgba(255,255,255, 0);
-        b {
+        span {
             font-weight: bolder;
-            color: #ff0066;
+            color: #ffff00;
         }
         .low {
             font-weight: bolder;
-            color: #ffff00;
+            color: #ff0066;
             
         }
         .future {
