@@ -2,6 +2,9 @@
     .mobileNav {
         display:none;
     }
+    .section2box div:last-child {
+        font-size: 1.4em;
+    }
 }
 
 
@@ -37,6 +40,9 @@
     .hamburger {
         display: flex;
     }
+    .section2box div:last-child {
+        font-size: 1.3em;
+    }
 }
 
 
@@ -44,19 +50,22 @@
 
 
 @media (max-width: 640px) {
-    
+    .section2box div:last-child {
+        font-size: 1.5em;
+    }
 }
 
-@media (max-width: 640px) {
 
+@media (max-width: 520px) {
+    .section2box div:last-child {
+        font-size: 1.7em;
+    }
 }
 
 @media (max-width: 420px) {
-
-}
-
-@media (max-width: 300px) {
-
+    .section2box div:last-child {
+        font-size: 1.8em;
+    }
 }
 
 
