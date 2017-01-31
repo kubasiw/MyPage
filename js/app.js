@@ -322,18 +322,34 @@ jQuery(document).ready(function(){
             
             if (hamburger.hasClass('on')) {
                 hamburger.removeClass('on');
-                mobileNav.css('display', 'none');
+                //mobileNav.css('display','none');
+                mobileNav.hide(150);
+                hamDivSpan2.show();
+                hamDivSpan1.css('transform','rotate(0deg)')
+                           .css('transition', '100ms')
+                           .css('margin','0.2rem')
+                           .css('background-color','#0e8044')
+                           .css('position','');
+                hamDivSpan3.css('transform','rotate(0deg)')
+                           .css('transition', '100ms')
+                           .css('margin','0.2rem')
+                           .css('background-color','#0e8044');
             } else {
                 hamburger.addClass('on')
                 hamDivSpan2.hide();
                 
                 hamDivSpan1.css('transform','rotate(45deg)')
                            .css('transition', '100ms')
-                           .css('margin','0');
+                           .css('margin','0')
+                           .css('background-color','#f53240')
+                           .css('position','absolute');
                 hamDivSpan3.css('transform','rotate(-45deg)')
                            .css('transition', '100ms')
+                           .css('background-color','#f53240')
                            .css('margin','0');
-                mobileNav.css('display', 'flex');
+                //mobileNav.css('display','flex');
+                mobileNav.show(150);
+                        
             };
         });
     };
