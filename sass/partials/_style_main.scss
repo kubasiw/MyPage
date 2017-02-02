@@ -473,6 +473,10 @@ nav {
 
 .contacts {
     background-color: rgba(0, 0, 0, 0.3);
+    div img {
+        width: 15%;
+    }
+    
 }
 
 
@@ -586,10 +590,9 @@ nav {
 
 footer {
     position: absolute;
-    bottom: -2em;
-    font-size: 1em;
+    bottom: 2%;
+    font-size: 1rem;
     opacity: 0.4;
-    height: 5rem;
     display: flex;
     align-items: center;
 }
