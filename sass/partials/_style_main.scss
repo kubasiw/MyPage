@@ -430,6 +430,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1rem;
     background-color: rgba(245, 50, 64, 0.5);
     border-top: 0.5vw solid rgba(255,255,255, 0.2);
     border-bottom: 0.5vw solid rgba(255,255,255, 0.2);
@@ -462,6 +463,8 @@ nav {
 }
 
 .empty {
+    position: absolute;
+    top: 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,7 +477,8 @@ nav {
 .contacts {
     background-color: rgba(0, 0, 0, 0.3);
     div img {
-        width: 15%;
+        width: 4rem;
+
     }
     
 }
@@ -591,7 +595,7 @@ nav {
 footer {
     position: absolute;
     bottom: 2%;
-    font-size: 1rem;
+    font-size: 100%;
     opacity: 0.4;
     display: flex;
     align-items: center;
