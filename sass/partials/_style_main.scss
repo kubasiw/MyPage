@@ -135,6 +135,7 @@ body {
 
 .section4 {
     @extend %section;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -584,7 +585,8 @@ nav {
 
 
 footer {
-    bottom: 1px;
+    position: absolute;
+    bottom: -2em;
     font-size: 1em;
     opacity: 0.4;
     height: 5rem;

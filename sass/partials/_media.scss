@@ -54,9 +54,15 @@
 
 
 @media (max-width: 640px) {
-    .section2box div:last-child {
-        font-size: 1.5em;
+    .section2box {
+        top: 34%;
+        div:last-child {
+            font-size: 1.5em;
+        }
     }
+    .aboutMe {
+            top: 9%;
+        }
     .section3box {
         width: 65%;
         height: 90%;
@@ -77,6 +83,13 @@
     .portfolioBox3 {
         width: 40vw;
         height: 40vw;
+        font-size: 1.7em;
+    }
+    .projects {
+        top: 0;
+    }
+    .section4box {
+        font-size: 2em;
     }
     
 }
