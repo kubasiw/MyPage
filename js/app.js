@@ -26,19 +26,6 @@ jQuery(document).ready(function(){
     
     var circle4 = jQuery('.circle4');
     
-    var circleUp = jQuery('.circleArrowUp');
-    var circleDown = jQuery('.circleArrowDown');
-    
-    var upAbout = jQuery('.upAbout');
-    var downAbout = jQuery('.downAbout');
-    
-    var upPort = jQuery('.upPort');
-    var downPort = jQuery('.downPort');
-    
-    var upCont = jQuery('.upCont');
-    
-    var inAm = jQuery('.inAmSec');
-    
     var nav = jQuery('nav');
     
     
@@ -77,23 +64,6 @@ jQuery(document).ready(function(){
         }
         progress();
         
-//        function welcome() {
-//            
-//            progressBar.animate({'opacity':'0'},3200, function() {
-//                jQuery('.percent').animate({'opacity':'0'},100, function() {
-//                    jQuery('.circ1').animate({'opacity':'1'},150);
-//                    jQuery('.circ2').animate({'opacity':'1'},300);
-//                    jQuery('.circ3').animate({'opacity':'1'},450);
-//                    jQuery('.circ4').animate({'opacity':'1'},500);
-//                    jQuery('.circ5').animate({'opacity':'1'},650);
-//                    jQuery('.circ6').animate({'opacity':'1'},800);
-//                    jQuery('.circ7').animate({'opacity':'1'},950);
-//                    jQuery('.circ8').animate({'opacity':'1'},1100);
-//                });
-//            });
-//        };
-//        welcome();
-        
         function hideStart() {
             startPage.fadeOut('slow');
             jQuery('body').css('overflow-y', 'visible');
@@ -102,8 +72,7 @@ jQuery(document).ready(function(){
             jQuery('.section3').show();
             jQuery('.section4').show();
             jQuery('.sectionBlank').show();
-            jQuery('.afterNav').show();
-                     
+            jQuery('.afterNav').show();       
         };
         setTimeout(hideStart,3500);
         
@@ -124,8 +93,6 @@ jQuery(document).ready(function(){
              var scrollTop = jQuery(window).scrollTop();
              var allCircleBox = jQuery('.allCircleBox');
             
-            
-
              if (scrollTop > (position - position)) {
                 nav.addClass('sticky')
                 allCircleBox.addClass('stickyBox')
@@ -136,7 +103,6 @@ jQuery(document).ready(function(){
         });
     };
     stickyMenu();
-    
     
     
     // adding effects on menu buttons:
@@ -283,30 +249,7 @@ jQuery(document).ready(function(){
         circle4.on('mouseout', function(){
            jQuery(this).css('opacity', '0.3')
                        .css('transition', '500ms');
-        });
-        
-        // jQuery for arrows
-        
-        circleUp.on('mouseover', function(){
-            jQuery(this).css('opacity', '1')
-                        .css('transition', '500ms');
-        });
-        
-        circleUp.on('mouseout', function(){
-           jQuery(this).css('opacity', '0.3')
-                       .css('transition', '500ms');
-        });
-        
-        circleDown.on('mouseover', function(){
-            jQuery(this).css('opacity', '1')
-                        .css('transition', '500ms');
-        });
-        
-        circleDown.on('mouseout', function(){
-           jQuery(this).css('opacity', '0.3')
-                       .css('transition', '500ms');
-        });
-        
+        });        
     };
     showMenu();
     
@@ -424,56 +367,6 @@ jQuery(document).ready(function(){
     
         });
         
-        // functions for arrowButtons in particular section
-        
-        upAbout.on('click', function(){
-            var id = jQuery(this).attr('href');
-            var elemOffset = jQuery(id).offset();
-            
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
-                circleBoxAbout.animate({'opacity':'0'},300);
-            });
-        });
-        
-        downAbout.on('click', function(){
-            var id = jQuery(this).attr('href');
-            var elemOffset = jQuery(id).offset();
-            
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
-                circleBoxAbout.animate({'opacity':'0'},300);
-                circleBoxPort.animate({'opacity':'1'},300);
-            });
-        });
-        
-        upPort.on('click', function(){
-            var id = jQuery(this).attr('href');
-            var elemOffset = jQuery(id).offset();
-            
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
-                circleBoxPort.animate({'opacity':'0'},300);
-                circleBoxAbout.animate({'opacity':'1'},300);
-            });
-        });
-        
-        downPort.on('click', function(){
-            var id = jQuery(this).attr('href');
-            var elemOffset = jQuery(id).offset();
-            
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
-                circleBoxPort.animate({'opacity':'0'},300);
-                circleBoxCont.animate({'opacity':'1'},300);
-            });
-        });
-        
-        upCont.on('click', function(){
-            var id = jQuery(this).attr('href');
-            var elemOffset = jQuery(id).offset();
-            
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
-                circleBoxCont.animate({'opacity':'0'},300);
-                circleBoxPort.animate({'opacity':'1'},300);
-            });
-        });
         
         // looking Mobile
         
@@ -583,12 +476,6 @@ jQuery(document).ready(function(){
         
     };
     port();
-    
-    
-   
-    
-    
-    
     
 }); // end of DOM
 

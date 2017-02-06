@@ -1,0 +1,85 @@
+.section3 {
+    @extend %section;
+    background-color: #101010;
+    a {
+        text-decoration: none;
+        color: black;
+    }    
+}
+
+.section3box {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    top: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 206, 0, 0.5);
+    border-top: 0.5vw solid rgba(255,255,255, 0.2);
+    border-bottom: 0.5vw solid rgba(255,255,255, 0.2);
+}
+
+.portfolioBox1 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10%;
+    background-color: rgba(255,255,255, 0.5);
+    background-image: url(/images/855min.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    div {
+        width: 25vw;
+        height: 25vw;
+        border-radius: 10%;
+        padding: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        opacity: 0;
+        border: 0.3vw solid gray;
+        text-align: center;
+    }
+}
+
+.portfolioBox2 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10%;
+    background-color: rgba(255,255,255, 0.5);
+    background-image: url(/images/sitmin.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    div {
+        width: 25vw;
+        height: 25vw;
+        border-radius: 10%;
+        padding: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        opacity: 0;
+        border: 0.3vw solid gray;
+        text-align: center;
+    }
+}
+
+.portfolioBox3 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: #727272;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3vw solid gray;
+    cursor: default;
+}
