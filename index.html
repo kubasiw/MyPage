@@ -5,6 +5,9 @@
     <meta name="viewport" content="initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700" rel="stylesheet">
     <title>KubSiwPage</title>
+    
+    <!-- Bootstrap -->
+    <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,8 +23,8 @@
     
     <!-- HOME / SEC1 -->
     
-    <section class="section1 section active" id="sec1">
-        <header>
+    <section class="section1 section active container-fluid" id="sec1">
+        <header class="container-fluid">
             <nav class="normalNav">
                 <div class="allCircleBox">
                    <div class="circleBox">
@@ -54,31 +57,41 @@
                    </div>
                 </div>
             </nav>
-            <div class="hamBox">
-                <div class="hamburger">
-                    <span class="span1"></span>
-                    <span class="span2"></span>
-                    <span class="span3"></span>
+<!--
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="hamBox col-12">
+                        <div class="hamburger">
+                            <span class="span1"></span>
+                            <span class="span2"></span>
+                            <span class="span3"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <nav class="mobileNav col-12">
+                                <div class="col-12 about" href="#sec2"><a href="#sec2"><span>aboutMe.</span></a></div>
+                                <div class="col-12 portfolio" href="#sec3"><a href="#sec3"><span>beCreative.</span></a></div>
+                                <div class="col-12 contact" href="#sec4"><a href="#sec4"><span>contact.</span></a></div>
+                                <div class="col-12 home2"><a href="#sec1">home.</a></div>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <nav class="mobileNav">
-                <div class="about" href="#sec2"><a href="#sec2"><span>aboutMe.</span></a></div>
-                <div class="portfolio" href="#sec3"><a href="#sec3"><span>beCreative.</span></a></div>
-                <div class="contact" href="#sec4"><a href="#sec4"><span>contact.</span></a></div>
-                <div class="home2"><a href="#sec1">home.</a></div>
-            </nav>
+-->
         </header>
     </section>
     
-    <section class="afterNav">
-        <div>Jakub Siwiński</div>
-        <div>welcome everyone!</div>
-        <div>(v0.0.1 beta)</div>
-        <div>no safari opt.</div>
-        <div>code opt. in progress</div>
+    <section class="afterNav container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <img class="img-responsive" src="/images/myLogo.png" alt="">
+            </div>
+        </div>
     </section>
     
-    <section class="sectionBlank"><div></div></section>
+    <!-- <section class="sectionBlank"><div></div></section>
     
     <!-- ABOUT ME  -->
     
@@ -97,7 +110,7 @@
                     I enjoyed it so much that I decided to deal with my new passion seriously.
                     I singed in for Coders Lab bootcamp to rebuild my knowledge
                     in a right way, and also to gain some new skills. Now I'm using: <span>HTML5</span>, <span>CSS3</span>, 
-                    <span>JavaScript</span>, <span>jQuery</span>, <span>SASS</span>, <span>RWD</span> under <span>GIT</span> control. I also have very basic command
+                    <span>JavaScript</span>, <span>jQuery</span>, <span>SASS</span>, <span>BOOTSTRAP</span> and <span>RWD</span> under <span>GIT</span> control. I also have very basic command
                     of <span class="low">PHP</span> and <span class="low">WordPress</span>. I'd like to increase my knowledge day by day.
                     Especially i'd like to learn <span class="future">Angular</span> and improve my <span class="future">JS</span> skills.
                 </p>      
@@ -152,9 +165,14 @@
                 </div>
             </div>
         </div>
-        <footer>Copyright &copy; 2017 by Jakub Siwiński</footer>
+        <footer class="container-fluid col-12">
+            <div class="row">
+                <span><a href="">Copyright &copy; 2017 by Jakub Siwiński</a></span>
+            </div>
+        </footer>
     </section>
 </body>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="js/app.js"></script>
+<script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </html>
