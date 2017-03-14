@@ -2,56 +2,14 @@
     .mobileNav {
         display:none;
     }
-    .section2box div:last-child {
-        font-size: 0.8em;
-    }
-    .me {
-        width: 60%;
-        height: 60%;
-    }
-}
-
-
-@media (max-width: 900px) {
-    .normalNav {
-        display: none;
-    }
-    nav {
-        margin: 0;
-    }
-    header {
-        display: flex;
-        justify-content: center;
-    }
-    .mobileNav {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .about {
-            display: flex;
-        }
-        .portfolio {
-            display: flex;
-        }
-        .contact {
-            display: flex;
-        }
-        .home2 {
-            display: flex;
-        }
-    }
-    .hamburger {
-        display: flex;
-    }
-    .section2box div:last-child {
-        font-size: 1.3em;
-    }
 }
 
 @media (max-width: 767px) {
-    .aboutMe img {
-        transform: scale(0.6);
+    .normalNav {
+        display: none;
+    }
+    .mobile {
+        display: block;
     }
 }
 
