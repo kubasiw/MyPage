@@ -256,7 +256,6 @@ jQuery(document).ready(function(){
     function mobileOnOff() {
         var hamburger = jQuery('.hamburger');
         var mobileNav = jQuery('.mobileNav');
-        var hamDiv = jQuery('.hamburger div');
         var hamDivSpan1 = jQuery('.span1');
         var hamDivSpan2 = jQuery('.span2');
         var hamDivSpan3 = jQuery('.span3');
@@ -291,7 +290,7 @@ jQuery(document).ready(function(){
                            .css('background-color','#f53240')
                            .css('margin','0');
                 //mobileNav.css('display','flex');
-                mobileNav.show(150);
+                mobileNav.css('display','block');
                         
             };
         });
