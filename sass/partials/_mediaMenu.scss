@@ -1,7 +1,5 @@
 .hamBox {
     position: fixed;
-    //display: flex;
-    justify-content: center;
     z-index: 1;
 }
 
@@ -11,22 +9,19 @@
         width: 3.5rem;
         border-radius: 0.5rem;
         display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         cursor: pointer;
         background-color: white;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         z-index: 2;
-        left: 45.5%; //firefox
+        //left: 45.5%; //firefox
         span {
             width: 60%;
             margin: 0.2rem;
             height: 10%;
             border-radius: 0.2rem;
             background-color: #0e8044;
-            left: 21%; //firefox
+            //left: 21%; //firefox
         }
     }
 

@@ -1,6 +1,6 @@
 .section4 {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #101010;
 //    background-image: url(/images/asphaltDown.png);
 //    background-repeat: no-repeat;
@@ -12,6 +12,9 @@
     }
     span {
         font-size: 1.5rem;
+    }
+    .row {
+        margin-bottom: 5%;
     }
 }
 
