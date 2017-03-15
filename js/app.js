@@ -300,9 +300,6 @@ jQuery(document).ready(function(){
     function lookForSection(){
         
         var anchor = jQuery("nav a");
-        var circleBoxAbout = jQuery('.circleBoxAbout');
-        var circleBoxPort = jQuery('.circleBoxPort');
-        var circleBoxCont = jQuery('.circleBoxCont');
         var aboutMob = jQuery('.about');
         var portMob = jQuery('.portfolio');
         var contactMob = jQuery('.contact');
@@ -312,11 +309,8 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');  // id will get href from circA
             var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
-                circleBoxAbout.animate({'opacity':'1'},300);
-                circleBoxPort.animate({'opacity':'0'},300);
-                circleBoxCont.animate({'opacity':'0'},300);
-            });
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
+                
 
         });
         
@@ -324,22 +318,14 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
-                circleBoxPort.animate({'opacity':'1'},300);
-                circleBoxAbout.animate({'opacity':'0'},300);
-                circleBoxCont.animate({'opacity':'0'},300);
-            });
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
         });
         
         circle3.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1500, function() {
-                circleBoxCont.animate({'opacity':'1'},300);
-                circleBoxPort.animate({'opacity':'0'},300);
-                circleBoxAbout.animate({'opacity':'0'},300);
-            });
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1500);
         });
         
         anchor.on('click', function(){
@@ -354,11 +340,7 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000, function() {
-                circleBoxAbout.animate({'opacity':'0'},300);
-                circleBoxPort.animate({'opacity':'0'},300);
-                circleBoxCont.animate({'opacity':'0'},300);
-            });
+            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
             
     
         });
@@ -370,11 +352,7 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');  // id will get href from circA
             var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
-                circleBoxAbout.animate({'opacity':'1'},300);
-                circleBoxPort.animate({'opacity':'0'},300);
-                circleBoxCont.animate({'opacity':'0'},300);
-            });
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
 
         });
         
@@ -382,11 +360,7 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');  // id will get href from circA
             var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
-                circleBoxAbout.animate({'opacity':'1'},300);
-                circleBoxPort.animate({'opacity':'0'},300);
-                circleBoxCont.animate({'opacity':'0'},300);
-            });
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
 
         });
         
@@ -394,11 +368,7 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');  // id will get href from circA
             var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
-                circleBoxAbout.animate({'opacity':'1'},300);
-                circleBoxPort.animate({'opacity':'0'},300);
-                circleBoxCont.animate({'opacity':'0'},300);
-            });
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
 
         });
         
@@ -406,11 +376,7 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');  // id will get href from circA
             var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},500, function() {
-                circleBoxAbout.animate({'opacity':'1'},300);
-                circleBoxPort.animate({'opacity':'0'},300);
-                circleBoxCont.animate({'opacity':'0'},300);
-            });
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
 
         });
         
