@@ -85,20 +85,19 @@ jQuery(document).ready(function(){
     function stickyMenu(){
         
         var nav = jQuery('.normalNav');
-        var allCircle = jQuery('.allCircleBox');
         var position = nav.offset().top;
         
         jQuery(window).on('scroll', function(){
 
              var scrollTop = jQuery(window).scrollTop();
-             var allCircleBox = jQuery('.allCircleBox');
+             var mobNav = jQuery('.normalNav nav');
             
              if (scrollTop > (position - position)) {
                 nav.addClass('sticky')
-                allCircleBox.addClass('stickyBox')
+                mobNav.addClass('stickyBox')
             } else {
                 nav.removeClass('sticky')
-                allCircleBox.removeClass('stickyBox')
+                mobNav.removeClass('stickyBox')
             }
         });
     };
