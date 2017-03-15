@@ -263,7 +263,6 @@ jQuery(document).ready(function(){
             
             if (hamburger.hasClass('on')) {
                 hamburger.removeClass('on');
-                //mobileNav.css('display','none');
                 mobileNav.hide(150);
                 hamDivSpan2.show();
                 hamDivSpan1.css('transform','rotate(0deg)')
@@ -288,7 +287,6 @@ jQuery(document).ready(function(){
                            .css('transition', '100ms')
                            .css('background-color','#f53240')
                            .css('margin','0');
-                //mobileNav.css('display','flex');
                 mobileNav.css('display','block');
                         
             };
