@@ -1,6 +1,6 @@
 .section4 {
     position: relative;
-    height: 100vh;
+    height: 85vh;
     background-color: #101010;
 //    background-image: url(/images/asphaltDown.png);
 //    background-repeat: no-repeat;
@@ -28,13 +28,18 @@
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    //font-size: 100%;
-    opacity: 0.4;
-    //left: 32%;
-    a {
+    height: 5vh;
+    background-color: #222222;
+    .row {
+        margin-bottom: 0;
+    }
+    .footerRow {
+        //height: 2em;
+        background-color: #222222; 
+    }
+    .footerRow a {
         text-decoration: none;
-        color: #ffffff;
+        font-size: 0.8em;
+        color: #9d9d9d; 
     }
 }

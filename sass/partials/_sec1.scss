@@ -22,17 +22,6 @@ nav {
     background-color: #101010;
 }
 
-.allCircleBox {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.circleBox {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-}
 
 .circle1 {
     @extend %circle;
