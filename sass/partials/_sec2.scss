@@ -1,8 +1,11 @@
 .section2 {
     @extend %section;
-    background-color: #101010;  
+    background-color: #101010;
+    .aboutMe {
+        font-size: 7vh;
+    }
     p {
-        font-size: 1em;
+        font-size: 2vh;
         color: #a7a7a7;
             span {
                 font-weight: bolder;
