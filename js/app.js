@@ -258,6 +258,8 @@ jQuery(document).ready(function(){
         var hamDivSpan1 = jQuery('.span1');
         var hamDivSpan2 = jQuery('.span2');
         var hamDivSpan3 = jQuery('.span3');
+        var rowMobile = jQuery('.rowMobile');
+    
         
         hamburger.on('click', function(){
             
@@ -291,7 +293,9 @@ jQuery(document).ready(function(){
                         
             };
         });
+        
     };
+        
     mobileOnOff();
     
     
@@ -438,6 +442,7 @@ jQuery(document).ready(function(){
         
     };
     port();
+    
     
 }); // end of DOM
 

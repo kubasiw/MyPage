@@ -1,6 +1,6 @@
-@media (min-width: 768px) {
-    .mobileNav {
-        display: none;
+@media (max-width: 1030px) {
+    .section2 p {
+        font-size: 3.5vw;
     }
 }
 
@@ -11,8 +11,10 @@
     .mobile {
         display: block;
     }
+    .section2 p {
+        font-size: 3vw;
+    }
 }
-
 
 @media (max-width: 640px) {
    
@@ -42,6 +44,9 @@
 }
 
 @media (max-width: 420px) {
+    .section2 p {
+        font-size: 2.7vw;
+    }
     .section2box div:last-child {
         font-size: 1.8em;
     }
@@ -57,6 +62,12 @@
         width: 42vw;
         height: 42vw;
         font-size: 1.4em;
+    }
+}
+
+@media (max-width: 360px) {
+    .section2 p {
+        font-size: 2.3vw;
     }
 }
 
