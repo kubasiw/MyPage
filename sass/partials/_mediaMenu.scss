@@ -15,7 +15,7 @@
         display: none;
         cursor: pointer;
         background-color: white;
-        margin-top: 0.5rem;
+        margin-top: 0.9rem;
         margin-bottom: 0.5rem;
         z-index: 2;
         span {
@@ -29,34 +29,42 @@
 
 .mobileNav {
     display: none;
+    width:100%;
+    height: 35%;
     position: fixed;
-    font-size: 1.5rem;
-    margin-top: 5rem;
+    top: 5rem;
     z-index: 1;
+    nav {
+        height:100%;
+    }
     .about {
         width: 100%;
-        height: 18.75%;
+        height: 25%;
+        font-size: 1.5rem;
         background-color: rgba(0,0,0,0.95);
         border-bottom: 0.1rem dotted rgba(255,255,255, 0.5);
         cursor: pointer;
     }
     .portfolio {
         width: 100%;
-        height: 18.75%;
+        height: 25%;
+        font-size: 1.5rem;
         background-color: rgba(0,0,0,0.95);
         border-bottom: 0.1rem dotted rgba(255,255,255, 0.5);
         cursor: pointer;
     }
     .contact {
         width: 100%;
-        height: 18.75%;
+        height: 25%;
+        font-size: 1.5rem;
         background-color: rgba(0,0,0,0.95);
         border-bottom: 0.1rem dotted rgba(255,255,255, 0.5);
         cursor: pointer;
     }
     .home2 {
         width: 100%;
-        height: 18.75%;
+        height: 25%;
+        font-size: 1.5rem;
         background-color: rgba(0,0,0,0.95);
         cursor: pointer;
     }
