@@ -17,7 +17,9 @@
 }
 
 @media (max-width: 640px) {
-   
+    .section3 a {
+        width:65%;
+    }
 }
 
 @media (max-width: 580px) {
@@ -46,22 +48,6 @@
 @media (max-width: 420px) {
     .section2 p {
         font-size: 2.7vw;
-    }
-    .section2box div:last-child {
-        font-size: 1.8em;
-    }
-    .portfolioBox1 {
-        width: 42vw;
-        height: 42vw;
-    }
-    .portfolioBox2 {
-        width: 42vw;
-        height: 42vw;
-    }
-    .portfolioBox3 {
-        width: 42vw;
-        height: 42vw;
-        font-size: 1.4em;
     }
 }
 
