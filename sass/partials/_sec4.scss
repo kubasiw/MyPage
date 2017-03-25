@@ -1,6 +1,6 @@
 .section4 {
     position: relative;
-    height: 85vh;
+    min-height: 400px;
     background-color: #101010;
 //    background-image: url(/images/asphaltDown.png);
 //    background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 }
 
 footer {
-    height: 5vh;
+    min-height:40px;
     background-color: #222222;
     .row {
         margin-bottom: 0;
