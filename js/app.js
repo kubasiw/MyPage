@@ -253,19 +253,27 @@ jQuery(document).ready(function(){
     showMenu();
     
     function mobileOnOff() {
+        var normalNav = jQuery('.normalNav');
         var hamburger = jQuery('.hamburger');
         var mobileNav = jQuery('.mobileNav');
         var hamDivSpan1 = jQuery('.span1');
         var hamDivSpan2 = jQuery('.span2');
         var hamDivSpan3 = jQuery('.span3');
         var rowMobile = jQuery('.rowMobile');
-    
         
+//        function checkWidth() {
+//            if(normalNav.css('display','none') == false && hamburger.hasClass('on')) {
+//                hamburger.removeClass('on');
+//            };
+//        };
+//        checkWidth();
+        
+    
         hamburger.on('click', function(){
             
             if (hamburger.hasClass('on')) {
                 hamburger.removeClass('on');
-                mobileNav.hide(150);
+                mobileNav.hide();
                 hamDivSpan2.show();
                 hamDivSpan1.css('transform','rotate(0deg)')
                            .css('transition', '100ms')
@@ -292,8 +300,7 @@ jQuery(document).ready(function(){
                 mobileNav.css('display','block');
                         
             };
-        });
-        
+        }); 
     };
         
     mobileOnOff();
