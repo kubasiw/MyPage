@@ -25,15 +25,23 @@ jQuery(document).ready(function(){
     // home vars
     
     var circle4 = jQuery('.circle4');
-    
     var nav = jQuery('nav');
     
     
     var startPage = jQuery('.start');
     var progressBar = jQuery('.progressBar span');
     
-    // starting animations
+    // opening / closing mobile menu
     
+    var normalNav = jQuery('.normalNav');
+    var hamburger = jQuery('.hamburger');
+    var mobileNav = jQuery('.mobileNav');
+    var hamDivSpan1 = jQuery('.span1');
+    var hamDivSpan2 = jQuery('.span2');
+    var hamDivSpan3 = jQuery('.span3');
+    var rowMobile = jQuery('.rowMobile');
+    
+    // starting animations
     function start() {
         
         function progress() {
@@ -252,23 +260,10 @@ jQuery(document).ready(function(){
     };
     showMenu();
     
-    function mobileOnOff() {
-        var normalNav = jQuery('.normalNav');
-        var hamburger = jQuery('.hamburger');
-        var mobileNav = jQuery('.mobileNav');
-        var hamDivSpan1 = jQuery('.span1');
-        var hamDivSpan2 = jQuery('.span2');
-        var hamDivSpan3 = jQuery('.span3');
-        var rowMobile = jQuery('.rowMobile');
-        
-//        function checkWidth() {
-//            if(normalNav.css('display','none') == false && hamburger.hasClass('on')) {
-//                hamburger.removeClass('on');
-//            };
-//        };
-//        checkWidth();
-        
     
+    // function for opening/closing mobile nav, hamburger etc.
+    function mobileOnOff() {
+        
         hamburger.on('click', function(){
             
             if (hamburger.hasClass('on')) {
@@ -300,10 +295,37 @@ jQuery(document).ready(function(){
                 mobileNav.css('display','block');
                         
             };
-        }); 
+        });
     };
         
     mobileOnOff();
+    
+    // this function will be closing mobile menu when the 
+    // width > then 767px and the normal nav replace mobile.
+    
+    function navClose() {
+
+        jQuery(window).resize(function(){
+            var win = jQuery(this); //this = window
+            if (win.width() >= 767 && hamburger.hasClass('on')) {
+                hamburger.removeClass('on');
+                mobileNav.css('display', 'none');
+                hamDivSpan2.show();
+                hamDivSpan1.css('transform','rotate(0deg)')
+                           .css('transition', '100ms')
+                           .css('margin','0.2rem')
+                           .css('background-color','#0e8044')
+                           .css('position','');
+                hamDivSpan3.css('transform','rotate(0deg)')
+                           .css('transition', '100ms')
+                           .css('margin','0.2rem')
+                           .css('background-color','#0e8044');
+            }
+        });
+    };
+    navClose();
+    
+    
     
     
     // functions for navigation - looking section on page
