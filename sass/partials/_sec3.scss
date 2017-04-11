@@ -14,6 +14,9 @@
     p {
         padding: 0.3em;
     }
+    a {
+        text-decoration: none;
+    }
 }
 
 .projects {
@@ -24,8 +27,8 @@
 .info {
     position: absolute;
     display:none;
-    width:100%;
-    height:100%;
+    width:99%;
+    height:99%;
     z-index: 1;
     font-size: 0.8em;
     background-color: rgba(0,0,0,0.97);
@@ -37,6 +40,13 @@
     color: #f53240;
 }
 
+.fa-github {
+    color:darkgray;
+}
+
+.fa-play-circle {
+    color:darkgray;
+}
 
 
 

@@ -329,15 +329,15 @@ jQuery(document).ready(function(){
         
         var sitOn = jQuery('.sitOn');
         var sitInfo = jQuery('.sitInfo');
-        var sitInfoX = jQuery('.sitInfo i');
+        var sitInfoX = jQuery('.closeSit');
         
         var p855 = jQuery('.p855');
         var volInfo = jQuery('.855info');
-        var volInfoX = jQuery('.855info i');
+        var volInfoX = jQuery('.close855');
         
         var pracownia = jQuery('.pracownia');
         var TlInfo = jQuery('.TlInfo');
-        var TlInfoX = jQuery('.TlInfo i');
+        var TlInfoX = jQuery('.closeTl');
         
         // SIT ON CHAIR
         sitOn.on('click', function(){
