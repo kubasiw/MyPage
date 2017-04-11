@@ -325,6 +325,23 @@ jQuery(document).ready(function(){
     };
     navClose();
     
+    function infoOnOff() {
+        
+        var sitOn = jQuery('.sitOn');
+        var sitInfo = jQuery('.sitInfo');
+        var sitInfoX = jQuery('.sitInfo i');
+        
+        sitOn.on('click', function(){
+            sitInfo.css('display', 'block');
+        });
+        
+        sitInfoX.on('click', function() {
+            sitInfo.css('display','none');
+        });
+    };
+    
+    infoOnOff();
+    
     
     
     
