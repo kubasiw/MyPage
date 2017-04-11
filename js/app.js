@@ -331,12 +331,40 @@ jQuery(document).ready(function(){
         var sitInfo = jQuery('.sitInfo');
         var sitInfoX = jQuery('.sitInfo i');
         
+        var p855 = jQuery('.p855');
+        var volInfo = jQuery('.855info');
+        var volInfoX = jQuery('.855info i');
+        
+        var pracownia = jQuery('.pracownia');
+        var TlInfo = jQuery('.TlInfo');
+        var TlInfoX = jQuery('.TlInfo i');
+        
+        // SIT ON CHAIR
         sitOn.on('click', function(){
             sitInfo.css('display', 'block');
         });
         
         sitInfoX.on('click', function() {
             sitInfo.css('display','none');
+        });
+        
+        
+        // 855
+        p855.on('click', function(){
+            volInfo.css('display', 'block');
+        });
+        
+        volInfoX.on('click', function() {
+            volInfo.css('display','none');
+        });
+        
+        //PRACOWNIA
+        pracownia.on('click', function(){
+            TlInfo.css('display', 'block');
+        });
+        
+        TlInfoX.on('click', function() {
+            TlInfo.css('display','none');
         });
     };
     
