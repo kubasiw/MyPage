@@ -24,19 +24,21 @@
     margin-top: 4.5rem;
 }
 
-.info {
+
+
+.infoBar {
     position: absolute;
-    display:none;
-    width:99%;
-    height:99%;
-    z-index: 1;
-    font-size: 0.9em;
+    //display:none;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 2;
+    border-radius:10%;
     background-color: rgba(0,0,0,0.97);
     p {
     }
 }
 
-.fa-close {
+.close {
     color: #f53240;
 }
 
