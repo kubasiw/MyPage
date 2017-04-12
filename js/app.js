@@ -325,6 +325,58 @@ jQuery(document).ready(function(){
     };
     navClose();
     
+    function beCreative() {
+        
+        var project1 = jQuery('.project1');
+        var info1 = jQuery('.info1');
+        var close1 = jQuery('.close1');
+        
+        var project2 = jQuery('.project2');
+        var info2 = jQuery('.info2');
+        var close2 = jQuery('.close2');
+        
+        var project3 = jQuery('.project3');
+        var info3 = jQuery('.info3');
+        var close3 = jQuery('.close3');
+        
+        var blank = jQuery('.blank');
+        var infoBlank = jQuery('.infoBlank');
+        var closeBlank = jQuery('.closeBlank');
+        
+        //------------------------------
+        project1.on('click', function(){
+            info1.css('display','flex');
+        });
+        close1.on('click', function(){
+            info1.css('display','none');
+        });
+        
+        //-----------------------------
+        project2.on('click', function(){
+            info2.css('display','flex');
+        });
+        close2.on('click', function(){
+            info2.css('display','none');
+        });
+        
+        //-----------------------------
+        project3.on('click', function(){
+            info3.css('display','flex');
+        });
+        close3.on('click', function(){
+            info3.css('display','none');
+        });
+        
+        //-----------------------------
+        blank.on('click', function(){
+            infoBlank.css('display','flex');
+        });
+        closeBlank.on('click', function(){
+            infoBlank.css('display','none');
+        });
+    };
+    
+    beCreative();
 
     
     
@@ -344,7 +396,7 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');  // id will get href from circA
             var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
+            jQuery('html, body').ante({scrollTop: elemOffset.top},500);
                 
 
         });
