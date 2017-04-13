@@ -1,5 +1,5 @@
 .section1 {
-    background-image: url(/images/asphaltTop.png);
+    background-image: url(../images/asphaltTop.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #101010;
@@ -101,7 +101,7 @@ nav {
 .circle4 {
     @extend %circle;
     background-color: #ffffff;
-    background-image: url(./images/home.png);
+    background-image: url(../images/home.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.3;
