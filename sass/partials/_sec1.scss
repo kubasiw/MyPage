@@ -101,12 +101,12 @@ nav {
 .circle4 {
     @extend %circle;
     background-color: #ffffff;
-    background-image: url(./images/home.png);
+    background-image: url(/images/home.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.3;
 }
 
 .home {
-    background-image: url(./images/home.png);
+    background-image: url(/images/home.png);
 }

@@ -396,7 +396,7 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');  // id will get href from circA
             var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
-            jQuery('html, body').ante({scrollTop: elemOffset.top},500);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
                 
 
         });
@@ -405,14 +405,14 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
         });
         
         circle3.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1500);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
         });
         
         anchor.on('click', function(){
@@ -420,14 +420,14 @@ jQuery(document).ready(function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},2000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
         });
         
         circle4.on('click', function(){
             var id = jQuery(this).attr('href');
             var elemOffset = jQuery(id).offset();
             
-            jQuery('html, body').animate({scrollTop: elemOffset.top},1000);
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
             
     
         });
@@ -528,5 +528,3 @@ jQuery(document).ready(function(){
     
     
 }); // end of DOM
-
-   
