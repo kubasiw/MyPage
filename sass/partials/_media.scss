@@ -29,21 +29,13 @@
     .section3 p {
         font-size: 0.8rem;
     }
-}
-
-@media (max-width: 580px) {
-    .portfolioBox1 {
-        width: 35vw;
-        height: 35vw;
-    }
-    .portfolioBox2 {
-        width: 35vw;
-        height: 35vw;
-    }
-    .portfolioBox3 {
-        width: 35vw;
-        height: 35vw;
-        font-size: 1.4em;
+    .section4 {
+        p {
+            font-size: 2.1em;
+        }
+        a {
+            font-size: 2.1em;
+        }
     }
 }
 

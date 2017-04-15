@@ -261,6 +261,29 @@ jQuery(document).ready(function(){
     showMenu();
     
     
+    function blink() {
+        jQuery('.fa:nth-child(1)').hide();
+
+        setInterval(function(){
+            jQuery('.fa:nth-child(1)').fadeIn(800).fadeOut(800);
+        },100);
+        
+        jQuery('.fa:nth-child(2)').hide();
+
+        setInterval(function(){
+            jQuery('.fa:nth-child(2)').fadeIn(800).fadeOut(800);
+        },200);
+        
+        jQuery('.fa:nth-child(3)').hide();
+
+        setInterval(function(){
+            jQuery('.fa:nth-child(3)').fadeIn(800).fadeOut(800);
+        },300);
+        
+    };
+    blink();
+    
+    
     // function for opening/closing mobile nav, hamburger etc.
     function mobileOnOff() {
         
@@ -391,14 +414,13 @@ jQuery(document).ready(function(){
         var portMob = jQuery('.portfolio');
         var contactMob = jQuery('.contact');
         var homeMob = jQuery('.home2');
+        var fa = jQuery('.fa');
         
         circle1.on('click', function(){          // while clicking on a circle
             var id = jQuery(this).attr('href');  // id will get href from circA
             var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
             jQuery('html, body').animate({scrollTop: elemOffset.top},500);
-                
-
         });
         
         circle2.on('click', function(){
@@ -428,8 +450,14 @@ jQuery(document).ready(function(){
             var elemOffset = jQuery(id).offset();
             
             jQuery('html, body').animate({scrollTop: elemOffset.top},500);
+        });
+        
+        // for blinking arrows on the bootom of main view
+        fa.on('click', function(){          // while clicking on a circle
+            var id = jQuery(this).attr('href');  // id will get href from circA
+            var elemOffset = jQuery(id).offset(); // elemOffset will find element with same id as button href and get offset
             
-    
+            jQuery('html, body').animate({scrollTop: elemOffset.top},500);
         });
         
         
