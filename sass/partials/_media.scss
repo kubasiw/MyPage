@@ -2,41 +2,41 @@
     .section2 p {
         font-size: 2.8vw;
     }
-    .mobileNav {
-        display:none;
-    }
+        .mobileNav {
+            display:none;
+        }
 }
 
 @media (max-width: 768px) {
     .normalNav {
         display: none;
     }
-    .mobile {
-        display: block;
-    }
-    .section2 p {
-        font-size: 3vw;
-    }
-    .section3 p {
-        font-size: 1rem;
-    }
+        .mobile {
+            display: block;
+        }
+            .section2 p {
+                font-size: 3vw;
+            }
+                .section3 p {
+                    font-size: 1rem;
+                }
 }
 
 @media (max-width: 640px) {
     .section3 a {
         width:65%;
     }
-    .section3 p {
-        font-size: 0.8rem;
-    }
-    .section4 {
-        p {
-            font-size: 2.1em;
+        .section3 p {
+            font-size: 0.8rem;
         }
-        a {
-            font-size: 2.1em;
-        }
-    }
+            .section4 {
+                p {
+                    font-size: 2.1em;
+                }
+                    a {
+                        font-size: 2.1em;
+                    }
+            }
 }
 
 
@@ -44,14 +44,14 @@
     .section2 p {
         font-size: 2.7vw;
     }
-    .infoBlank {
-        img {
-            transform: scale(0.7);
+        .infoBlank {
+            img {
+                transform: scale(0.7);
+            }
+                span {
+                    font-size:1rem;
+                }
         }
-        span {
-            font-size:1rem;
-        }
-    }
 }
 
 @media (max-width: 360px) {

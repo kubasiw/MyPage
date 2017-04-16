@@ -4,19 +4,23 @@
         text-decoration: none;
         color: black;
     }
-    img {
-        padding: 0.5em;
-        cursor: pointer;
-    }
-    i {
-        cursor: pointer;
-    }
-    p {
-        padding: 0.3em;
-    }
-    a {
-        text-decoration: none;
-    }
+        img {
+            padding: 0.5em;
+            cursor: pointer;
+        }
+            i {
+                cursor: pointer;
+            }
+                p {
+                    color: white;
+                    font-weight: 600;
+                }
+                    a {
+                        text-decoration: none;
+                    }
+                        h4 {
+                            color: white;
+                        }
 }
 
 .projects {
@@ -34,8 +38,6 @@
     z-index: 0;
     border-radius:10%;
     background-color: rgba(0,0,0,0.97);
-    p {
-    }
 }
 
 .close {
