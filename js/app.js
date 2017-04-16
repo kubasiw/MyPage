@@ -43,7 +43,7 @@ jQuery(document).ready(function(){
     
     // starting animations
     function start() {
-        
+        // we're hiding all sections before welcoming animation
         function progress() {
             jQuery('.section1').hide();
             jQuery('.section2').hide();
@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
             jQuery('.sectionBlank').hide();
             jQuery('.afterNav').hide();
             
-            
+           
         progressBar.css('width', '100%')
                      .css('background-color', '#ffce00')
                      .css('transition', '3s');
@@ -72,6 +72,7 @@ jQuery(document).ready(function(){
         }
         progress();
         
+        // after animation our sections will be visible
         function hideStart() {
             startPage.fadeOut('slow');
             jQuery('body').css('overflow-y', 'visible');
@@ -260,7 +261,7 @@ jQuery(document).ready(function(){
     };
     showMenu();
     
-    
+    // function for blinkink arrows in section1
     function blink() {
         jQuery('.fa:nth-child(1)').hide();
 
@@ -402,11 +403,7 @@ jQuery(document).ready(function(){
     beCreative();
 
     
-    
-    
-    
     // functions for navigation - looking section on page
-    
     function lookForSection(){
         
         var anchor = jQuery("nav a");
@@ -497,62 +494,6 @@ jQuery(document).ready(function(){
         
     };
     lookForSection();
-    
-    
-    function port() {
-      
-        var portBox1 = jQuery('.portfolioBox1');
-        var portBox1div = jQuery('.portfolioBox1 div');
-        
-        portBox1.on('mouseover', function(){
-            portBox1div.animate({'opacity':'0.9'},300, function(){
-                portBox1div.css('transform', 'scale(1.2)')
-                           .css('transition', '150ms');
-            });
-        });
-        
-        portBox1.on('mouseout', function(){
-            portBox1div.animate({'opacity':'0'},300, function(){
-                portBox1div.css('transform', 'scale(1)')
-                           .css('transition', '150ms');
-            });
-        });
-        
-        
-        var portBox2 = jQuery('.portfolioBox2');
-        var portBox2div = jQuery('.portfolioBox2 div');
-        
-        portBox2.on('mouseover', function(){
-            portBox2div.animate({'opacity':'0.9'},300, function(){
-                portBox2div.css('transform', 'scale(1.2)')
-                           .css('transition', '150ms');
-            });
-        });
-        
-        portBox2.on('mouseout', function(){
-            portBox2div.animate({'opacity':'0'},300, function(){
-                portBox2div.css('transform', 'scale(1)')
-                           .css('transition', '150ms');
-            });
-        });
-        
-        var portBox3 = jQuery('.portfolioBox3');
-        var portBox1span = jQuery('.portfolioBox3 span');
-        
-        portBox3.on('mouseover', function (){
-            jQuery(this).css('transform', 'scale(0.9)')
-                        .css('background-color', 'rgba(255, 255, 255, 0.9)')
-                        .css('transition','150ms');
-        });
-        
-        portBox3.on('mouseout', function (){
-            jQuery(this).css('transform', 'scale(1)')
-                        .css('background-color', '#727272')
-                        .css('transition','150ms');
-        });
-        
-    };
-    port();
     
     
 }); // end of DOM
