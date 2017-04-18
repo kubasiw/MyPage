@@ -263,25 +263,13 @@ jQuery(document).ready(function(){
     
     // function for blinkink arrows in section1
     function blink() {
-        jQuery('.fa:nth-child(1)').hide();
+        jQuery('.fa').hide();
 
         setInterval(function(){
-            jQuery('.fa:nth-child(1)').fadeIn(800).fadeOut(800);
-        },100);
-        
-        jQuery('.fa:nth-child(2)').hide();
-
-        setInterval(function(){
-            jQuery('.fa:nth-child(2)').fadeIn(800).fadeOut(800);
-        },200);
-        
-        jQuery('.fa:nth-child(3)').hide();
-
-        setInterval(function(){
-            jQuery('.fa:nth-child(3)').fadeIn(800).fadeOut(800);
-        },300);
-        
+            jQuery('.fa').fadeIn(1000).fadeOut(1000);
+        },0);
     };
+    
     blink();
     
     
