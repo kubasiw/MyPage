@@ -355,6 +355,10 @@ jQuery(document).ready(function(){
         var info4 = jQuery('.info4');
         var close4 = jQuery('.close4');
         
+        var project5 = jQuery('.project5');
+        var info5 = jQuery('.info5');
+        var close5 = jQuery('.close5');
+        
         var blank = jQuery('.blank');
         var infoBlank = jQuery('.infoBlank');
         var closeBlank = jQuery('.closeBlank');
@@ -389,6 +393,14 @@ jQuery(document).ready(function(){
         });
         close4.on('click', function(){
             info4.css('display','none');
+        });
+        
+        //-----------------------------
+        project5.on('click', function(){
+            info5.css('display','flex');
+        });
+        close5.on('click', function(){
+            info5.css('display','none');
         });
         
         //-----------------------------
